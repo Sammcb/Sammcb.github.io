@@ -1,0 +1,89 @@
+#content {
+  grid-area: content;
+  display: grid;
+  grid-template-areas: '. title .' '. info .' '. calendar-title .' '. calendar .' '. spring2019 .' '. spring2019-events .' '. fall2018 .' '. fall2018-events .' '. spring2018 .' '. spring2018-events .' '. . .';
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 15fr 1fr;
+  margin: 15px 0px;
+}
+
+.event .event-title {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between
+}
+
+@media (max-width: 766px) {
+  .event .event-title {
+    display: block;
+  }
+}
+
+.title {
+  grid-area: title;
+  border-bottom: 1px solid var(--separator);
+}
+
+#info {
+  grid-area: info;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+#calendar-title {
+  grid-area: calendar-title;
+}
+
+#spring2019 {
+  grid-area: spring2019;
+}
+
+#fall2018 {
+  grid-area: fall2018;
+}
+
+#spring2018 {
+  grid-area: spring2018;
+}
+
+#calendar {
+  grid-area: calendar;
+}
+
+#calendar-image {
+  margin: 10px 20px;
+  padding: 15px 15px 50px 15px;
+  border-top: 1px solid #3d8341;
+}
+
+#calendar img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+#spring2019-events {
+  grid-area: spring2019-events;
+  display: block;
+  justify-content: center;
+}
+
+#fall2018-events {
+  grid-area: fall2018-events;
+  display: block;
+  justify-content: center;
+}
+
+#spring2018-events {
+  grid-area: spring2018-events;
+  display: block;
+  justify-content: center;
+}
+
+.event {
+  border-top: 1px solid #3d8341;
+  margin: 10px 20px;
+  padding: 15px 15px 50px 15px;
+}
