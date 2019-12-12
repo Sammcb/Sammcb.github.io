@@ -1,0 +1,8 @@
+body {
+  font-family: Monaco;
+}
+
+#seed-error {
+  display: none;
+  color: red;
+}

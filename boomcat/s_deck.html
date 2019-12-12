@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/s_deck.css">
+    <script src="js/s_deck.js"></script>
+    <title>Boomcat - Standard Deck</title>
+  </head>
+  <body>
+    <h1>Standard deck</h1>
+    <h3>Select the number of players</h3>
+    <select id="player-count" onchange="changeOptions()">
+      <option value="2" selected="selected">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <h3>Select your player number</h3>
+    <select id="player-id">
+      <option value="0" selected="selected">1</option>
+      <option value="1">2</option>
+    </select>
+    <h3>Select which player starts first</h3>
+    <select id="start-id">
+      <option value="0" selected="selected">1</option>
+      <option value="1">2</option>
+    </select>
+    <h3>Enter deck seed (integer >= 0)</h3>
+    <p id="seed-error">Please enter a valid seed</p>
+    <input id="seed" type="number" value="0">
+    <br>
+    <br>
+    <button type="button" onclick="play()">Play!</button>
+  </body>
+</html>

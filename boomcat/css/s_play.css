@@ -1,0 +1,40 @@
+body {
+  font-family: Monaco;
+}
+
+#hand-cards {
+  display: none;
+  list-style-type: decimal;
+}
+
+#action-info {
+  display: none;
+}
+
+#player-prompt {
+  display: none;
+}
+
+#act-btn {
+  display: none;
+}
+
+#player-sel-msg {
+  display: none;
+}
+
+#player-sel {
+  display: none;
+}
+
+#card-sel-msg {
+  display: none;
+}
+
+#card-sel {
+  display: none;
+}
+
+#fin-act-btn {
+  display: none;
+}
