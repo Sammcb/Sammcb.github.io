@@ -98,7 +98,6 @@ nav {
 
   #nav-links li {
     padding: 15px 0px 15px 0px;
-    background-color: cornflowerblue;
     display: none;
     flex-direction: row;
     justify-content: center;

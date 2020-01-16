@@ -26,27 +26,24 @@
   justify-content: space-between;
 }
 
-.img-grid {
-  border-radius: 10px;
-  border: 1px solid royalblue;
-  padding: 15px;
+.project {
+  max-width: 710px;
+  margin: 0 auto;
+}
+
+.project-link {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0px 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  background: cornflowerblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.img-grid img {
-  width: 250px;
-  height: 100%;
-  border-radius: 10px;
-  border: 1px solid var(--separator);
-  margin: 15px;
-}
-
-@media (max-width: 766px) {
-  .img-grid {
-    margin: 0px;
-  }
+.project-link:hover {
+  background: #0041c2;
+  color: white;
 }
