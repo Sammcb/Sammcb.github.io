@@ -4,7 +4,7 @@
   grid-template-areas: '. about-title .' '. intro .' '. . .';
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr 15fr 1fr;
-  margin: 15px 0px;
+  margin: 15px 0;
 }
 
 #about-title {
@@ -15,18 +15,25 @@
 #intro {
   grid-area: intro;
   display: flex;
-  flex-direction: row;
+}
+
+#intro-photo {
+  border-radius: 180px;
+  border: 1px solid var(--separator);
+  overflow: hidden;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 250px;
+  max-height: 250px;
 }
 
 #intro img {
-  width: 250px;
-  height: 250px;
-  border-radius: 180px;
-  border: 1px solid var(--separator);
+  width: 100%;
+  height: 100%;
 }
 
 #intro-info {
-  padding: 0px 50px;
+  margin: 0 50px;
 }
 
 @media (max-width: 766px) {
@@ -36,6 +43,6 @@
   }
 
   #intro-info {
-    margin: 20px 0px;
+    margin: 20px 0;
   }
 }

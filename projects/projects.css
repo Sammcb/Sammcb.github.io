@@ -4,7 +4,7 @@
   grid-template-areas: '. page-title .' '. project-list .' '. . .';
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr 15fr 1fr;
-  margin: 15px 0px;
+  margin: 15px 0;
 }
 
 .title {
@@ -17,7 +17,7 @@
 
 #project-list {
   grid-area: project-list;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .project-title {
