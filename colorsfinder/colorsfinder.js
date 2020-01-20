@@ -1,3 +1,6 @@
+// update css
+// add text inputs for colors
+
 function findColors() {
   c1 = document.getElementById('color1').value;
   c2 = document.getElementById('color2').value;
@@ -36,7 +39,7 @@ function findColors() {
   resColors.push(c2);
 
   for (c of resColors) {
-    result.innerHTML += '<div class="result-color"><input type="text" value="' + c + '" id="' + c + '" class="copy-input" readonly><div class="color-display" style="background: ' + c + ';"></div><button onclick="copyColor(\'' + c + '\')">Copy</button></div>';
+    result.innerHTML += '<div class="result-color"><p>' + c + '</p><div class="color-display" style="background: ' + c + ';"></div><button onclick="copyColor(\'' + c + '\')">Copy</button></div>';
   }
 }
 
@@ -44,11 +47,4 @@ function resetPage() {
   result = document.getElementById('result');
   result.innerHTML = '';
   document.getElementById('content').style.backgroundImage = '';
-}
-
-function copyColor(c) {
-  colorField = document.getElementById(c);
-  colorField.select();
-  document.execCommand('copy');
-  window.getSelection().removeAllRanges();
 }
