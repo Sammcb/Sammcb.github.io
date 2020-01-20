@@ -4,7 +4,7 @@
   grid-template-areas: '. about-title .' '. intro .' '. . .';
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr 15fr 1fr;
-  margin: 15px 0;
+  padding: 15px 0;
 }
 
 #about-title {
