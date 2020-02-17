@@ -25,15 +25,15 @@
     <div id="content">
       <div id="controls">
         <h1 class="title" id="page-title">ColorsFinder</h1>
-        <form id="color-form" action="" method="get" onsubmit="findColors(); return false;">
+        <div id="color-form">
           <div id="inputs">
             <input id="color1" class="color-input" type="color" required>
             <input id="color2" class="color-input" type="color" required>
             <input id="steps" type="number" value="0" min="0" max="254" required>
           </div>
           <br>
-          <input id="submit" type="submit" value="Find colors">
-        </form>
+          <a id="submit" onclick="findColors()">Find colors</a>
+        </div>
       </div>
       <div id="result-grid">
         <div id="result">
