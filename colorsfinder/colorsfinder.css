@@ -1,14 +1,25 @@
+:root {
+  color-scheme: light dark;
+  --bg: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1e1e;
+  }
+}
+
 #content {
   grid-area: content;
   display: grid;
-  grid-template-areas: '. controls .' '. color-input .' '. result-grid .' '. . .';
+  grid-template-areas: '. controls .' '. result-grid .' '. . .';
   grid-template-rows: auto auto auto 1fr;
   grid-template-columns: 1fr 15fr 1fr;
   padding: 15px 0;
 }
 
 #controls {
-  background: cornflowerblue;
+  background: var(--bg);
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
@@ -19,15 +30,49 @@
   border-bottom: 1px solid var(--separator);
 }
 
-#color-input {
-  grid-area: color-input;
+#color-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#color-form input {
+  font-family: Monaco;
+  font-size: medium;
+}
+
+#inputs {
+  display: flex;
+  align-items: center;
+}
+
+.color-input {
+  width: 100px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+#steps {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid var(--separator);
+  padding: 2px 10px;
+}
+
+#submit {
+  background: cornflowerblue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 40px;
 }
 
 #result-grid {
   display: grid;
   grid-template-areas: '. result .';
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
   grid-area: result-grid;
 }
 
@@ -37,7 +82,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: cornflowerblue;
+  background: var(--bg);
   border-radius: 5px;
 }
 
@@ -54,4 +99,10 @@
   border-radius: 5px;
   height: 10px;
   width: 40px;
+}
+
+@media(min-width: 767px) and (pointer: fine) {
+  #submit:hover {
+    background: #0041c2;
+  }
 }

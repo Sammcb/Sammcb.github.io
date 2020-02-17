@@ -113,19 +113,19 @@ nav {
   padding: 0 10px;
 }
 
-#footer-links li svg {
+.icon svg {
   display: block;
   width: 32px;
   height: 100%;
   fill: var(--svg-fill);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767px) and (pointer: fine) {
   #nav-links li a:hover {
     background-color: cornflowerblue;
   }
 
-  #footer-links li svg:hover {
+  .icon:hover {
     fill: grey;
   }
 }

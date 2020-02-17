@@ -1,5 +1,4 @@
 // update css
-// add text inputs for colors
 
 function findColors() {
   c1 = document.getElementById('color1').value;
@@ -16,7 +15,6 @@ function findColors() {
   rgb1 = [parseInt('0x' + c1[1] + c1[2]), parseInt('0x' + c1[3] + c1[4]), parseInt('0x' + c1[5] + c1[6])];
   rgb2 = [parseInt('0x' + c2[1] + c2[2]), parseInt('0x' + c2[3] + c2[4]), parseInt('0x' + c2[5] + c2[6])];
   delta = [rgb1[0] - rgb2[0], rgb1[1] - rgb2[1], rgb1[2] - rgb2[2]];
-  console.log(delta);
 
   prevRgb = [rgb1[0], rgb1[1], rgb1[2]];
   resColors = [c1];
@@ -26,7 +24,6 @@ function findColors() {
       Math.round(rgb1[1] - (i * (delta[1] / (steps + 1)))),
       Math.round(rgb1[2] - (i * (delta[2] / (steps + 1))))
     ];
-    console.log(newRgb);
 
     if (newRgb[0] === prevRgb[0] && newRgb[1] === prevRgb[1] && newRgb[2] === prevRgb[2]) continue;
 
@@ -39,12 +36,6 @@ function findColors() {
   resColors.push(c2);
 
   for (c of resColors) {
-    result.innerHTML += '<div class="result-color"><p>' + c + '</p><div class="color-display" style="background: ' + c + ';"></div><button onclick="copyColor(\'' + c + '\')">Copy</button></div>';
+    result.innerHTML += '<div class="result-color"><p>' + c + '</p><div class="color-display" style="background: ' + c + ';"></div></div>';
   }
-}
-
-function resetPage() {
-  result = document.getElementById('result');
-  result.innerHTML = '';
-  document.getElementById('content').style.backgroundImage = '';
 }
