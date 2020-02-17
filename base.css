@@ -125,7 +125,7 @@ nav {
     background-color: cornflowerblue;
   }
 
-  .icon:hover {
+  .icon svg:hover {
     fill: grey;
   }
 }
