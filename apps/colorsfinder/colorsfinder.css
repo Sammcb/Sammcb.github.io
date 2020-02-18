@@ -37,8 +37,6 @@
 }
 
 #color-form input {
-  font-family: Monaco;
-  font-size: medium;
   height: 100%;
 }
 
@@ -54,6 +52,8 @@
 }
 
 #steps {
+  font-family: Menlo;
+  font-size: medium;
   text-align: center;
   border-radius: 5px;
   border: 1px solid var(--separator);
@@ -102,7 +102,7 @@
   width: 40px;
 }
 
-@media(min-width: 767px) and (pointer: fine) {
+@media(pointer: fine) {
   #submit:hover {
     background: #0041c2;
   }

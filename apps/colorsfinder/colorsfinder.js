@@ -1,5 +1,3 @@
-// update css
-
 function findColors() {
   c1 = document.getElementById('color1').value;
   c2 = document.getElementById('color2').value;

@@ -1,7 +1,7 @@
 #content {
   grid-area: content;
   display: grid;
-  grid-template-areas: '. page-title .' '. project-list .' '. . .';
+  grid-template-areas: '. page-title .' '. music-list .' '. . .';
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr 15fr 1fr;
   padding: 15px 0;
@@ -15,18 +15,18 @@
   grid-area: page-title;
 }
 
-#project-list {
-  grid-area: project-list;
+#music-list {
+  grid-area: music-list;
   padding: 0 20px;
 }
 
-.project {
+.music {
   max-width: 710px;
   margin: 0 auto;
   padding-bottom: 40px;
 }
 
-.project-link {
+.music-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +38,8 @@
   border-radius: 5px;
 }
 
-@media(min-width: 767px) and (pointer: fine) {
-  .project-link:hover {
+@media(pointer: fine) {
+  .music-link:hover {
     background: #0041c2;
   }
 }

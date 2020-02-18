@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="/base.css">
     <link rel="stylesheet" href="projects.css">
-    <link rel="shortcut icon" href="../assets/images/logo.ico">
+    <link rel="shortcut icon" href="/assets/images/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../base.js"></script>
+    <script src="/base.js"></script>
     <title>Projects - Sammcb</title>
   </head>
   <body onresize="updateElements()">
     <nav>
       <ul id="nav-links">
         <li id="home">
-          <div id="mobile-spacer"></div>
-          <a href="/">Home</a>
-          <button id="mobile-toggle" onclick="toggleNav()">&#9776</button>
+          <div id="home-link">
+            <a href="/">Home</a>
+          </div>
+          <div id="mobile-toggle">
+            <a onclick="toggleNav()">&#8801</a>
+          </div>
         </li>
         <li class="nav-link">
           <a href="/projects">Projects</a>
+        </li>
+        <li class="nav-link">
+          <a href="/apps">Apps</a>
+        </li>
+        <li class="nav-link">
+          <a href="/art">Art</a>
+        </li>
+        <li class="nav-link">
+          <a href="/music">Music</a>
         </li>
       </ul>
     </nav>
     <div id="content">
       <h1 class="title" id="page-title">Projects</h1>
       <div id="project-list">
+        <div class="project">
+          <h2>ColorsFinderJS -- 2020</h2>
+          <p>A web version of the desktop C++ ColorsFinder application.</p>
+          <a class="project-link" href="https://github.com/Sammcb/ColorsFinderJS" target="_blank">Check out the code</a>
+        </div>
         <div class="project">
           <h2>Health App (WIP) -- 2020</h2>
           <p>iOS app written using SwiftUI to help promote healty eating and fitness. Will use CloudKit backend.</p>

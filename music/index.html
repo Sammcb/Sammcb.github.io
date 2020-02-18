@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="../base.css">
-    <link rel="stylesheet" href="colorsfinder.css">
-    <link rel="shortcut icon" href="../assets/images/logo.ico">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="music.css">
+    <link rel="shortcut icon" href="/assets/images/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../base.js"></script>
-    <script src="colorsfinder.js"></script>
-    <title>ColorsFinder - Sammcb</title>
+    <script src="/base.js"></script>
+    <title>Music - Sammcb</title>
   </head>
   <body onresize="updateElements()">
     <nav>
       <ul id="nav-links">
         <li id="home">
-          <div id="mobile-spacer"></div>
-          <a href="/">Home</a>
-          <button id="mobile-toggle" onclick="toggleNav()">&#9776</button>
+          <div id="home-link">
+            <a href="/">Home</a>
+          </div>
+          <div id="mobile-toggle">
+            <a onclick="toggleNav()">&#8801</a>
+          </div>
         </li>
         <li class="nav-link">
           <a href="/projects">Projects</a>
         </li>
+        <li class="nav-link">
+          <a href="/apps">Apps</a>
+        </li>
+        <li class="nav-link">
+          <a href="/art">Art</a>
+        </li>
+        <li class="nav-link">
+          <a href="/music">Music</a>
+        </li>
       </ul>
     </nav>
     <div id="content">
-      <div id="controls">
-        <h1 class="title" id="page-title">ColorsFinder</h1>
-        <div id="color-form">
-          <div id="inputs">
-            <input id="color1" class="color-input" type="color" required>
-            <input id="color2" class="color-input" type="color" required>
-            <input id="steps" type="number" value="0" min="0" max="254" required>
-          </div>
-          <br>
-          <a id="submit" onclick="findColors()">Find colors</a>
-        </div>
-      </div>
-      <div id="result-grid">
-        <div id="result">
+      <h1 class="title" id="page-title">Music</h1>
+      <div id="music-list">
+        <div class="music">
+          <h2>PLACEHOLDER</h2>
+          <p>THIS WILL BE WHERE THE MUSIC GOES</p>
+          <a class="music-link" href="#">LINK TO MUSIC</a>
         </div>
       </div>
     </div>

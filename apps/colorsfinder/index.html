@@ -2,11 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="/base.css">
-    <link rel="stylesheet" href="/home/home.css">
+    <link rel="stylesheet" href="colorsfinder.css">
     <link rel="shortcut icon" href="/assets/images/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/base.js"></script>
-    <title>Sammcb</title>
+    <script src="colorsfinder.js"></script>
+    <title>ColorsFinder - Sammcb</title>
   </head>
   <body onresize="updateElements()">
     <nav>
@@ -34,15 +35,20 @@
       </ul>
     </nav>
     <div id="content">
-      <h1 id="about-title">About me</h1>
-      <div id="intro">
-        <div id="intro-photo">
-          <img src="home/assets/images/profile.png">
+      <div id="controls">
+        <h1 class="title" id="page-title">ColorsFinder</h1>
+        <div id="color-form">
+          <div id="inputs">
+            <input id="color1" class="color-input" type="color" required>
+            <input id="color2" class="color-input" type="color" required>
+            <input id="steps" type="number" value="0" min="0" max="254" required>
+          </div>
+          <br>
+          <a id="submit" onclick="findColors()">Find colors</a>
         </div>
-        <div id="intro-info">
-          <p>I'm a third year B.S. CS and B.A. Physics student at the University of Virginia. I haved worked on a variety of programming projects in the areas of web dev, mobile dev, machine learning, and optimization. I also like tinkering with Raspberry Pis and Arduinos and have recently started working on generative art programs!</p>
-          <p>Besides computer science, I enjoy running, hiking, playing tennis, swing dancing, and generally staying active! I follow a plant-based lifestyle and love cooking, baking, and trying out new restaurants.</p>
-        </div>
+      </div>
+      <div id="result-grid">
+        <div id="result"></div>
       </div>
     </div>
     <footer class="footer">
