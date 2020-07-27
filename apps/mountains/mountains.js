@@ -1,10 +1,13 @@
+// Randomizer seed
 var seed = 1;
 
 function mtnGen() {
+	// Rng
 	let lcg = x => seed = (1103515245 * x + 12345) % Math.pow(2, 31);
 	let rMax = Math.pow(2, 31) - 1;
 	let rRange = (min, max) => lcg(seed) / rMax * (max - min) + min;
 
+	// Canvas setup
 	let c = document.getElementById('mtn');
 	c.style.height = `${Math.floor(c.offsetWidth / 2)}px`;
 	let ctx = c.getContext('2d');
