@@ -1,10 +1,10 @@
 const tasks = [
+  'Finally listen to some Christmas songs!!',
   'Watch a cheesy Christmas movie',
-  'task 2',
-  'task 3',
-  'task 4',
-  'task 5',
-  'task 6',
+  'Stargaze',
+  'Trip to DC!',
+  'Make some winter art',
+  'Make a Christmas list',
   'task 7',
   'task 8',
   'task 9',
@@ -16,12 +16,12 @@ const tasks = [
   'Asheville',
   'Asheville',
   'Drive home',
-  'task 18',
-  'task 19',
+  'Drink some peppermint hot cocoa',
+  'Bake Christmas cookies',
   'task 20',
   'task 21',
   'task 22',
-  'task 23',
+  'Get and decorate a Christmas plant',
   'Watch A Charlie Brown Christmas'
 ]
 

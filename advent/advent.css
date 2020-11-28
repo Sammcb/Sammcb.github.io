@@ -37,38 +37,8 @@
   margin: 20px 20px;
 }
 
-.task {
-
-}
-
 @media(pointer: fine) {
   .day:hover {
     background: red;
-  }
-}
-
-
-
-.app {
-  max-width: 710px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-
-.app-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 40px;
-  background: cornflowerblue;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-@media(pointer: fine) {
-  .app-link:hover {
-    background: #0041c2;
   }
 }
