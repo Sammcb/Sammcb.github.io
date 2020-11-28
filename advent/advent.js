@@ -35,7 +35,7 @@ function addDays() {
 
 function reveal(day) {
   const date = new Date()
-  if (date.getMonth() !== 10 || date.getDate() < day) return
+  if (date.getMonth() !== 11 || date.getDate() < day) return
   document.getElementById(`day${day}`).style.background = 'green'
   document.getElementById(`task${day}`).innerHTML = tasks[day]
 }
