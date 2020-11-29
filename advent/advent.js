@@ -35,7 +35,7 @@ function addDays() {
 
 function reveal(day) {
   const date = new Date()
-  if (date.getMonth() !== 10 || date.getDate() < day) return
+  if (date.getMonth() !== 11 || date.getDate() < day) return
   document.getElementById(`day${day}`).style.background = 'green'
   document.getElementById(`task${day}`).innerHTML = tasks[day]
 }
@@ -60,8 +60,7 @@ function letItSnow() {
 
 function snow(c, ctx) {
   ctx.clearRect(0, 0, c.width, c.height)
-  // Create new snowflakes
-  const newSnow = 10
+  const newSnow = c.offsetWidth < 767 ? 4 : 10
   for (let i = 0; i <= newSnow; i++) {
     const x = c.offsetWidth / newSnow * i
     rRange(0, 50) < 0.5 && snowflakes.push({x, y: 0, r: rRange(5, 10), ox: x, ri: rRange(0, 1) < 0.5})
@@ -80,7 +79,6 @@ function snow(c, ctx) {
     ctx.arc(x, y, r, 0, 2 * Math.PI)
     ctx.fill()
   })
-  console.log(snowflakes.length)
 }
 
 function fixCanvas() {
