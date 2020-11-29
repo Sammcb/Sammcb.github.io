@@ -9,7 +9,7 @@
 		<script src="advent.js"></script>
 		<title>Advent Calendar - Sammcb</title>
 	</head>
-	<body onresize="updateElements()" onload="addDays()">
+	<body onresize="updateElements(); fixCanvas()" onload="addDays(); letItSnow()">
 		<nav>
 			<ul id="nav-links">
 				<li id="home">
@@ -32,6 +32,7 @@
 			</ul>
 		</nav>
 		<div id="content">
+			<canvas id="snow"></canvas>
 			<h1 class="title" id="page-title">Advent Calendar</h1>
 			<div id="calendar"></div>
 		</div>
