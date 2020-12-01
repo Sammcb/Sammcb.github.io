@@ -1,27 +1,27 @@
 const tasks = [
   'Finally listen to some Christmas songs!!',
   'Watch a cheesy Christmas movie',
-  'Stargaze',
+  'Get and decorate a Christmas plant',
   'Trip to DC!',
   'Make some winter art',
   'Make a Christmas list',
   'Craft some snowflakes',
-  'Cook steamed buns',
+  '',
   'Go for a walk in Winter Wonder Land',
-  'task 10',
-  'task 11',
+  'Mulled wine',
+  'Order from Osheim bakes',
   'Drive to Asheville!',
-  'Asheville',
+  'Winter smores',
   'Asheville',
   'Asheville',
   'Asheville',
   'Drive home',
   'Drink some peppermint hot cocoa',
   'Bake Christmas cookies',
-  'task 20',
-  'task 21',
-  'task 22',
-  'Get and decorate a Christmas plant',
+  'Richmond trip',
+  '',
+  '',
+  'Stargaze',
   'Watch A Charlie Brown Christmas'
 ]
 
@@ -35,7 +35,7 @@ function addDays() {
 
 function reveal(day) {
   const date = new Date()
-  if (date.getMonth() !== 11 || date.getDate() < day) return
+  if (date.getMonth() !== 11 || date.getDate() <= day) return
   document.getElementById(`day${day}`).style.background = 'green'
   document.getElementById(`task${day}`).innerHTML = tasks[day]
 }
