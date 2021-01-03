@@ -20,7 +20,7 @@ const tasks = [
   'Bake Christmas cookies',
   'Richmond trip',
   'Trip to DC!',
-  '',
+  'Play Rummikub',
   'Stargaze',
   'Watch A Charlie Brown Christmas'
 ]
