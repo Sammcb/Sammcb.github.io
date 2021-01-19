@@ -1,0 +1,21 @@
+#content {
+  grid-area: content;
+  display: grid;
+  grid-template-areas: '. page-title .' '. app-info .' '. . .';
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr 15fr 1fr;
+  padding: 15px 0;
+}
+
+.title {
+  border-bottom: 1px solid var(--separator);
+}
+
+#page-title {
+  grid-area: page-title;
+}
+
+#app-info {
+  grid-area: app-info;
+  padding: 0 20px;
+}
