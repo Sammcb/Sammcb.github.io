@@ -17,4 +17,11 @@
 
 #artwork {
   grid-area: artwork;
+  padding: 0 100px;
+}
+
+@media (max-width: 766px) {
+  #artwork {
+  	padding: 0;
+  }
 }

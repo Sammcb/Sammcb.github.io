@@ -1,8 +1,8 @@
 #content {
   grid-area: content;
   display: grid;
-  grid-template-areas: '. page-title .' '. art-list .' '. . .';
-  grid-template-rows: auto auto 1fr;
+  grid-template-areas: '. page-title .' '. about .' '. art-list .' '. . .';
+  grid-template-rows: auto auto auto 1fr;
   grid-template-columns: 1fr 15fr 1fr;
   padding: 15px 0;
 }
@@ -15,6 +15,11 @@
   grid-area: page-title;
 }
 
+#about {
+  grid-area: about;
+  padding: 0 20px 20px 20px;
+}
+
 #art-list {
   grid-area: art-list;
   padding: 0 20px;
@@ -23,23 +28,4 @@
 .art {
   max-width: 710px;
   margin: 0 auto;
-  padding-bottom: 40px;
-}
-
-.art-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 40px;
-  background: cornflowerblue;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-@media(pointer: fine) {
-  .art-link:hover {
-    background: #0041c2;
-  }
 }

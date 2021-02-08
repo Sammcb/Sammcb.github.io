@@ -1,28 +1,29 @@
-var prevWidth = window.innerWidth;
+const mobileWidth = 767
+const navLinks = document.getElementsByClassName('nav-link')
+let isDesktopView = window.innerWidth >= mobileWidth
+let navOpen = false
 
 function updateElements() {
-  var navLinks = document.getElementsByClassName("nav-link");
-  for (i = 0; i < navLinks.length; i++) {
-    if (window.innerWidth < 767 && prevWidth >= 767) {
-      navLinks[i].style.display = "none";
-    } else if (window.innerWidth >= 767 && prevWidth < 767 && navLinks[i].style.display === "none") {
-      navLinks[i].style.display = "flex";
+  const changedToMobileView = window.innerWidth < mobileWidth && isDesktopView
+  const changedToDesktopView = window.innerWidth >= mobileWidth && !isDesktopView
+  for (navLink of navLinks) {
+    if (changedToMobileView) {
+      navLink.style.display = 'none'
+    } else if (changedToDesktopView) {
+      navLink.style.display = 'flex'
     }
   }
-  prevWidth = window.innerWidth;
+
+  if (changedToDesktopView) {
+    navOpen = false
+  }
+
+  isDesktopView = window.innerWidth >= mobileWidth
 }
 
 function toggleNav() {
-  var navLinks = document.getElementsByClassName("nav-link");
-  for (i = 0; i < navLinks.length; i++) {
-    if (navLinks[i].style.display !== "none" && navLinks[i].style.display !== "flex") {
-      if (window.getComputedStyle(navLinks[i]).getPropertyValue("display") === "none") {
-        navLinks[i].style.display = "flex";
-      }
-    } else if (navLinks[i].style.display === "none") {
-      navLinks[i].style.display = "flex";
-    } else {
-      navLinks[i].style.display = "none";
-    }
+  for (navLink of navLinks) {
+    navLink.style.display = navOpen ? 'none' : 'flex'
   }
+  navOpen = !navOpen
 }

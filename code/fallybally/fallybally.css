@@ -1,7 +1,7 @@
 #content {
   grid-area: content;
   display: grid;
-  grid-template-areas: '. page-title .' '. app-info .' '. privacy .' '. . .';
+  grid-template-areas: '. page-title .' '. app-info .' '. privacy-title .' '. privacy .' '. . .';
   grid-template-rows: auto auto auto 1fr;
   grid-template-columns: 1fr 15fr 1fr;
   padding: 15px 0;
@@ -18,6 +18,15 @@
 #app-info {
   grid-area: app-info;
   padding: 0 20px;
+}
+
+#privacy-title {
+  grid-area: privacy-title;
+}
+
+#privacy-title-link {
+  text-decoration: none;
+  color: var(--text);
 }
 
 #privacy {

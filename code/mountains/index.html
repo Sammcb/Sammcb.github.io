@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="/base.css">
-		<link rel="stylesheet" href="/home/home.css">
+		<link rel="stylesheet" href="mountains.css">
 		<link rel="shortcut icon" href="/assets/images/logo.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="/base.js"></script>
-		<title>Sammcb</title>
+		<script src="mountains.js"></script>
+		<title>Mountains - Sammcb</title>
 	</head>
-	<body onresize="updateElements()">
+	<body onresize="updateElements(); scaleRes()" onload="mtnGen()">
 		<nav>
 			<ul id="nav-links">
 				<li id="home">
@@ -28,15 +29,21 @@
 			</ul>
 		</nav>
 		<div id="content">
-			<h1 id="about-title">About me</h1>
-			<div id="intro">
-				<div id="intro-photo">
-					<img src="home/assets/images/profile.png">
+			<div id="controls">
+				<h1 class="title" id="page-title">Mountains</h1>
+				<div id="param-form">
+					<div id="inputs">
+						<!-- let user either generate random or set params -->
+						<!-- <input id="color1" class="color-input" type="color" required>
+						<input id="color2" class="color-input" type="color" required>
+						<input id="steps" type="number" value="0" min="0" max="254" required> -->
+					</div>
+					<br>
+					<a id="submit" onclick="mtnGen()">Generate mountainscape</a>
 				</div>
-				<div id="intro-info">
-					<p>I have been programming for around 8 years and worked on a bunch of projects in the areas of web dev, mobile dev, machine learning, and optimization. Some of my favorite areas are generative art, iOS app development, and command line tools and games.</p>
-					<p>Besides computer science, I enjoy running, hiking, playing tennis, swing dancing, and generally staying active! I follow a plant-based lifestyle and love cooking, baking, and trying out new restaurants!</p>
-				</div>
+			</div>
+			<div id="result">
+				<canvas id="mtn" />
 			</div>
 		</div>
 		<footer id="footer">

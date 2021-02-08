@@ -3,6 +3,7 @@
   --separator: black;
   --link: #416ed2;
   --svg-fill: black;
+  --text: black;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,6 +11,7 @@
     --separator: white;
     --link: #5ac8fa;
     --svg-fill: white;
+    --text: white;
   }
 }
 
@@ -85,7 +87,7 @@ nav {
   align-items: center;
 }
 
-.footer {
+#footer {
   grid-area: footer;
   padding: 20px;
   border-top: 1px solid var(--separator);
@@ -152,7 +154,7 @@ nav {
     display: flex;
   }
 
-  .footer {
+  #footer {
     flex-direction: column-reverse;
   }
 

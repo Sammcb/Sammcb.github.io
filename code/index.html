@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/base.css">
+		<link rel="stylesheet" href="code.css">
+		<link rel="shortcut icon" href="/assets/images/logo.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="/base.js"></script>
+		<script src="code.js"></script>
+		<title>Code - Sammcb</title>
+	</head>
+	<body onresize="updateElements()">
+		<nav>
+			<ul id="nav-links">
+				<li id="home">
+					<div id="home-link">
+						<a href="/">Home</a>
+					</div>
+					<div id="mobile-toggle">
+						<a onclick="toggleNav()">&#8801;</a>
+					</div>
+				</li>
+				<li class="nav-link">
+					<a href="/code">Code</a>
+				</li>
+				<li class="nav-link">
+					<a href="/art">Art</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="content">
+			<h1 class="title" id="page-title">Code</h1>
+			<div id="about">
+				This is a collection of some of my favorite coding projects. Check out all of my projects on GitHub.
+			</div>
+			<div id="code-list">
+				<div>
+					<a class="dropdown-toggle" onclick="toggleCategory('utilities', 'utilities-title')">
+						<h2 id="utilities-title">Utilities &#9660;</h2>
+					</a>
+					<div id="utilities">
+						<div class="code">
+							<h3>Health App &centerdot; 2020 (WIP)</h3>
+							<p>iOS app written using SwiftUI to help promote healty eating and fitness. Will use CloudKit backend.</p>
+						</div>
+						<div class="code">
+							<h3>Terrepin &centerdot; 2016</h3>
+							<p>Terrepin is a utility app written in Swift for iOS. It can be used to place and add information to pins on a map.</p>
+							<a class="code-link" href="https://apps.apple.com/us/app/terrepin/id862715193" target="_blank">App Store page</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<a class="dropdown-toggle" onclick="toggleCategory('games', 'games-title')">
+						<h2 id="games-title">Games &#9660;</h2>
+					</a>
+					<div id="games">
+						<div class="code">
+							<h3>Centauri &centerdot; 2020</h3>
+							<p>A short text-based adventure game inspired by The Martian and Three Body Problem.</p>
+							<a class="code-link" href="https://github.com/Sammcb/Centauri" target="_blank">Source code</a>
+						</div>
+						<div class="code">
+							<a href="./fallybally">
+								<h3>Fally Bally &centerdot; 2014</h3>
+							</a>
+							<p>Fally Bally is a simple arcade game written in Objective-C for iOS. It originally relied on Apple's iAd system for generating revenue.</p>
+							<a class="code-link" href="https://apps.apple.com/us/app/fally-bally/id848680524" target="_blank">App Store page</a>
+							<!-- <br> -->
+							<!-- <a class="code-link" href="./fallybally">Source code</a> -->
+						</div>
+					</div>
+				</div>
+				<div>
+					<a class="dropdown-toggle" onclick="toggleCategory('generative-art', 'generative-art-title')">
+						<h2 id="generative-art-title">Generative Art &#9660;</h2>
+					</a>
+					<div id="generative-art">
+						<div class="code">
+							<a href="./mountains">
+								<h3>MountainsJS &centerdot; 2020</h3>
+							</a>
+							<p>Program to generate a mountainscape using semi-random combinations of various sine and cosine functions. Built using JavaScript and the HTML canvas.</p>
+							<a class="code-link" href="https://github.com/Sammcb/MountainsJS" target="_blank">Source code</a>
+						</div>
+						<div class="code">
+							<h3>Double Pendulum &centerdot; 2019</h3>
+							<p>Generative art program which produced varied artworks by plotting the movement of a double pendulum with randomized initial conditions. Speed-based coloration using custom implementation of Painter's algorithm and ColorsFinder algorithm. Built using Python and the Pillow and Scipy packages.</p>
+							<a class="code-link" href="https://github.com/Sammcb/DoublePendulum" target="_blank">Source code</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<a class="dropdown-toggle" onclick="toggleCategory('tools', 'tools-title')">
+						<h2 id="tools-title">Tools &#9660;</h2>
+					</a>
+					<div id="tools">
+						<div class="code">
+							<a href="./colorsfinder">
+								<h3>ColorsFinderJS &centerdot; 2020</h3>
+							</a>
+							<p>ColorsFinderJS is a web tool that helps find evenly spaced color gradients with arbitrary interval values.</p>
+							<a class="code-link" href="https://github.com/Sammcb/ColorsFinderJS" target="_blank">Source code</a>
+						</div>
+						<div class="code">
+							<h3>ColorsFinder &centerdot; 2018</h3>
+							<p>ColorsFinder is a desktop app that helps find evenly spaced color gradients with arbitrary interval values. Destop written in C++ with both command line usage and a GUI implemented with the Qt framework.</p>
+							<a class="code-link" href="https://github.com/Sammcb/ColorsFinder" target="_blank">Source code</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<a class="dropdown-toggle" onclick="toggleCategory('websites', 'websites-title')">
+						<h2 id="websites-title">Websites &#9660;</h2>
+					</a>
+					<div id="websites">
+						<div class="code">
+							<h3>Personal Website &centerdot; 2019-2021</h3>
+							<p>This website. Written with HTML, CSS, and JS and hosted on GitHub Pages. Provides a place to keep track of projects and practice web-based development.</p>
+							<a class="code-link" href="https://github.com/Sammcb/Sammcb.github.io" target="_blank">Source code</a>
+						</div>
+						<div class="code">
+							<h3>Veggies of Virginia Website &centerdot; 2018-2020</h3>
+							<p>Original website for the Veggies of Virginia CIO at UVa. Used to display information about the club and promote events and resources. Written using HTML, CSS, and JS and hosted on GitHub Pages.</p>
+							<a class="code-link" href="https://github.com/Sammcb/VeggiesOfVirginiaSite" target="_blank">Source code</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div id="footer-text">
+				<p>&copy; 2019-2021 &centerdot; Samuel McBroom</p>
+			</div>
+			<ul id="footer-links">
+				<li>
+					<a class="icon" href="https://github.com/Sammcb" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
