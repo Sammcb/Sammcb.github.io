@@ -17,7 +17,31 @@
 
 #app-info {
   grid-area: app-info;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 20px;
+}
+
+.description {
+  max-width: 710px;
+  font-family: ArialRoundedMTBold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+#device-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#device-image img {
+  max-width: 1000px;
+  width: 60%;
+  height: auto;
 }
 
 #privacy-title {
@@ -32,4 +56,10 @@
 #privacy {
   grid-area: privacy;
   padding: 0 20px;
+}
+
+@media (max-width: 766px) {
+  #device-image img {
+    width: 100%;
+  }
 }
