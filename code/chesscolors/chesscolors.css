@@ -62,8 +62,8 @@
 }
 
 .color-input {
-  width: 100px;
-  margin-right: 20px;
+  width: 50px;
+  margin-right: 10px;
 }
 
 #board-container {
@@ -93,10 +93,4 @@
 
 .piece {
   text-align: center;
-}
-
-@media(pointer: fine) {
-  #submit:hover {
-    background: #0041c2;
-  }
 }
