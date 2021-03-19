@@ -1,0 +1,14 @@
+url: "https://sammcb.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+title: "Sammcb" # the name of your site, e.g. ACME Corp.
+host: 0.0.0.0
+exclude:
+  - .gitignore
+  - CNAME
+  - LICENSE
+  - Makefile
+  - README.md
+  - docker-compose.yml
+  - boomcat
+  - Gemfile
+  - Gemfile.lock

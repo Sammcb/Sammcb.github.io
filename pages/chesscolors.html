@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /code/chesscolors
+title: ChessColors
+css: /assets/styles/chesscolors.css
+js: /assets/scripts/chesscolors.js
+onload: loadBoard()
+onresize: resizeBoard()
+---
+<div id="controls">
+	<h1 class="title">ChessColors</h1>
+	<div id="color-form">
+		<div id="inputs">
+			<div class="input-group">
+				<p>Pieces</p>
+				<div class="color-group">
+					<input id="pieceWhite" class="color-input" type="color" value="#ffffff" required oninput="theme()">
+					<p id="pieceWhiteColor"></p>
+				</div>
+				<br>
+				<div class="color-group">
+					<input id="pieceBlack" class="color-input" type="color" value="#000000" required oninput="theme()">
+					<p id="pieceBlackColor"></p>
+				</div>
+			</div>
+			<div class="input-group">
+				<p>Squares</p>
+				<div class="color-group">
+					<input id="squareWhite" class="color-input" type="color" value="#c0c0c0" required oninput="theme()">
+					<p id="squareWhiteColor"></p>
+				</div>
+				<br>
+				<div class="color-group">
+					<input id="squareBlack" class="color-input" type="color" value="#606060" required oninput="theme()">
+					<p id="squareBlackColor"></p>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+</div>
+<div id="board-container">
+	<div id="board"></div>
+</div>

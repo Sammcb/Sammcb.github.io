@@ -1,0 +1,150 @@
+:root {
+  color-scheme: light dark;
+  --separator: black;
+  --link: #416ed2;
+  --svg-fill: black;
+  --text: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --separator: white;
+    --link: #5ac8fa;
+    --svg-fill: white;
+    --text: white;
+  }
+}
+
+html {
+  height: 100%;
+  font-family: Menlo;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: royalblue;
+}
+
+a {
+  color: var(--link);
+}
+
+#nav-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav-link:not(#home) {
+  padding-left: 30px;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+}
+
+#home {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+
+#mobile-toggle {
+  cursor: pointer;
+  display: none;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 15px 5%;
+}
+
+#footer {
+  padding: 20px;
+  border-top: 1px solid var(--separator);
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-text {
+  font-size: 12px;
+}
+
+#footer-links {
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#footer-links li {
+  padding: 0 10px;
+}
+
+.icon svg {
+  display: block;
+  width: 32px;
+  height: 100%;
+  fill: var(--svg-fill);
+}
+
+@media (pointer: fine) {
+  #nav-links li a:hover {
+    color: lightskyblue;
+  }
+
+  .icon svg:hover {
+    fill: grey;
+  }
+}
+
+@media (max-width: 766px) {
+  #nav-links {
+    flex-direction: column;
+    margin: 0 5%;
+  }
+
+  .nav-link:not(#home) {
+    display: none;
+    padding-left: 0;
+    border-top: 1px solid cornflowerblue;
+  }
+
+  #home {
+    margin: 0;
+  }
+
+  #mobile-toggle {
+    display: flex;
+  }
+
+  #footer {
+    flex-direction: column-reverse;
+  }
+
+  #footer-text {
+    text-align: center;
+  }
+}
