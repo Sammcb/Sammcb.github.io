@@ -34,8 +34,7 @@ function addDays() {
 }
 
 function reveal(day) {
-  const date = new Date()
-  if (date.getMonth() !== 11 || date.getDate() <= day) return
+  if (new Date() < new Date(2020, 11, day + 1)) return
   document.getElementById(`day${day}`).style.background = 'green'
   document.getElementById(`task${day}`).innerHTML = tasks[day]
 }
