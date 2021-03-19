@@ -9,6 +9,5 @@ exclude:
   - Makefile
   - README.md
   - docker-compose.yml
-  - boomcat
   - Gemfile
   - Gemfile.lock
