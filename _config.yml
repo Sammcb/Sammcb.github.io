@@ -2,6 +2,12 @@ url: "https://sammcb.com"
 baseurl: "/"
 title: "Sammcb"
 host: 0.0.0.0
+sass:
+  sass_dir: _sass
+kramdown:
+  input: GFM
+  auto_ids: false
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 exclude:
   - .gitignore
   - CNAME

@@ -1,0 +1,26 @@
+#footer
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 20px $page-padding-horizontal
+	border-top: 1px solid var(--separator)
+
+	@media (max-width: $max-mobile-width)
+		flex-direction: column-reverse
+
+#footer-text
+	font-size: 12px
+	text-align: center
+
+#footer-icon
+	height: $footer-icon-size
+	width: $footer-icon-size
+	fill: var(--separator)
+
+	svg
+		width: $footer-icon-size
+		height: $footer-icon-size
+
+		@media(hover: hover)
+			&:hover
+				fill: gray

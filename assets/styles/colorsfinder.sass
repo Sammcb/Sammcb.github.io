@@ -1,0 +1,44 @@
+---
+---
+#inputs
+  display: flex
+  width: 250px
+  justify-content: space-around
+
+#steps
+  all: unset
+  border-radius: 5px
+  border: 1px solid var(--separator)
+  padding: 0 10px
+
+#submit
+  all: unset
+  background: royalblue
+  border-radius: 5px
+  color: white
+  cursor: pointer
+  padding: 10px
+
+  @media(hover: hover)
+    &:hover
+      color: lightskyblue
+
+#result
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  border-radius: 5px
+  max-width: 200px
+
+.result-color
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 150px
+
+.color-display
+  border: 1px solid var(--separator)
+  border-radius: 5px
+  height: 10px
+  width: 40px

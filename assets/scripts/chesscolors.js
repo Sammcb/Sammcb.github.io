@@ -102,7 +102,7 @@ function theme() {
   const squareWhite = document.getElementById('squareWhite').value
   const squareBlack = document.getElementById('squareBlack').value
 
-  document.getElementById('content').style.backgroundImage = `linear-gradient(${squareWhite}, ${squareBlack})`
+  document.getElementById('board-container').style.backgroundImage = `linear-gradient(${squareWhite}, ${squareBlack})`
   document.getElementById('pieceWhiteColor').innerHTML = pieceWhite
   document.getElementById('pieceBlackColor').innerHTML = pieceBlack
   document.getElementById('squareWhiteColor').innerHTML = squareWhite
@@ -117,7 +117,6 @@ function theme() {
   }
 
   for (piece of whitePieces) {
-    console.log(piece)
     piece.style.color = pieceWhite
   }
 

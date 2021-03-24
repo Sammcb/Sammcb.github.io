@@ -6,7 +6,13 @@ function findColors() {
     return
   }
   const steps = parseInt(document.getElementById('steps').value)
-  document.getElementById('content').style.backgroundImage = `linear-gradient(${c1},${c2})`
+  if (steps < 0) {
+    alert('Steps must be positive')
+    return
+  } else if (steps > 254) {
+    alert('Max number of steps is 254')
+    return
+  }
   const result = document.getElementById('result')
   result.innerHTML = ''
 
