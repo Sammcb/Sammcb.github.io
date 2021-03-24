@@ -73,4 +73,7 @@ That being said, the engine was definitely easier to learn compared to a more fu
 
 I hope you enjoyed this devlog series. I definitely will write more in the future on projects to come! If you want to look more closely at the code or run/build off of Anniversary yourself, make sure to check out the [repository](https://github.com/Sammcb/Anniversary)!
 
-Thank you for reading! If you have any suggestions or feedback, I will be setting up Discussions and Issue templates on GitHub soon.
+### Feedback
+{:.feedback}
+
+Thank you for reading! If you have any corrections, please create an [issue](https://github.com/Sammcb/Sammcb.github.io/issues/new/choose). If you have any general suggestions or feedback, check out the [discussion](https://github.com/Sammcb/Sammcb.github.io/discussions/7) for this devlog!

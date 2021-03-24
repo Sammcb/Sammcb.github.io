@@ -71,3 +71,8 @@ Finally, I ended the day by animating the two heart halves leaving the labyrinth
 
 ![](/assets/images/devlogs/anniversary/devlog1/heart.png){:.blog-image}
 {:.center-column}
+
+### Feedback
+{:.feedback}
+
+Thank you for reading! If you have any corrections, please create an [issue](https://github.com/Sammcb/Sammcb.github.io/issues/new/choose). If you have any general suggestions or feedback, check out the [discussion](https://github.com/Sammcb/Sammcb.github.io/discussions/6) for this devlog!

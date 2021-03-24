@@ -122,3 +122,8 @@ I was happy to see that the terrain was drawn to the screen, but I ran into an i
 ## Wrap Up
 
 With that, I had some new knowledge of Lua and LÖVE, the ability to control a player and render tiles from a spritesheet, and was excited to continue working on my game another day!
+
+### Feedback
+{:.feedback}
+
+Thank you for reading! If you have any corrections, please create an [issue](https://github.com/Sammcb/Sammcb.github.io/issues/new/choose). If you have any general suggestions or feedback, check out the [discussion](https://github.com/Sammcb/Sammcb.github.io/discussions/4) for this devlog!
