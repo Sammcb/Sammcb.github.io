@@ -19,7 +19,7 @@ After more than six years, Fally Bally is back and looking better than ever!
 
 For information on how to file a bug report or feature request, check out the Fally Bally [discussions](https://github.com/Sammcb/FallyBally/discussions/1).
 
-## [Privacy Policy 🔗](#privacy)
+## [Privacy Policy 🔗](#privacy){:.privacy-link}
 
 Fally Bally never collects or stores any personal data.
 {:#privacy}

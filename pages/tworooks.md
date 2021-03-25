@@ -15,7 +15,7 @@ Two Rooks is a simple, colorful chess app with multiple themes! Currently, only 
 
 For information on how to file a bug report or feature request, check out the Two Rooks [discussions](https://github.com/Sammcb/TwoRooks/discussions/1).
 
-## [Privacy Policy 🔗](#privacy)
+## [Privacy Policy 🔗](#privacy){:.privacy-link}
 
 Two Rooks never collects or stores any personal data.
 {:#privacy}
