@@ -36,7 +36,7 @@ Generative art program which produced varied artworks by plotting the movement o
 
 ## Tools
 
-### [ChessColors • 2021](/chesscolors)
+### [ChessColors • 2021](/ChessColors)
 
 ChessColors is a web tool for quickly picking pleasent color scemes for simple chess boards.
 
