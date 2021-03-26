@@ -26,7 +26,7 @@ Fally Bally is a simple, minimalist arcade game written in Swift using SpriteKit
 
 ## Generative Art
 
-### [Mountains • 2020](/mountains)
+### [Mountains • 2020](/MountainScape)
 
 Program to generate a mountainscape using semi-random combinations of various sine and cosine functions. Built using JavaScript and the HTML canvas.
 
