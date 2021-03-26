@@ -44,7 +44,7 @@ ChessColors is a web tool for quickly picking pleasent color scemes for simple c
 
 Simple Swift command line tool to automatically generate correctly sized images from a source image for the AppIcon XCAsset appiconset in Xcode. Check out the [code](https://github.com/Sammcb/MakeAppIcons).
 
-### [ColorsFinder • 2020](/colorsfinder)
+### [ColorsFinder • 2020](/ColorsFinder)
 
 ColorsFinder is a web tool that helps find evenly spaced color gradients with arbitrary interval values.
 
