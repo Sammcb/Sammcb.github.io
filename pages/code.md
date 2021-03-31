@@ -56,4 +56,4 @@ ColorsFinder is a web tool that helps find evenly spaced color gradients with ar
 
 ### Personal Website • 2019-2021
 
-This website. Written with HTML, CSS, and JS and hosted on GitHub Pages. Provides a place to keep track of projects and practice web-based development. Check out the [code](https://github.com/Sammcb/Sammcb.github.io).
+This website. Built using Jekyll and hosted on GitHub Pages. Provides a place to keep track of projects and practice web-based development. Check out the [code](https://github.com/Sammcb/Sammcb.github.io).
