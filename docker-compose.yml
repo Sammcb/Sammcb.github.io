@@ -1,12 +1,12 @@
 version: '3'
 services:
   web:
-    image: ghcr.io/sammcb/jekyll
+    image: jekyll/jekyll
     ports:
       - 4000:4000
     volumes:
-      - .:/sammcb
+      - .:/srv/jekyll
+    command: sh
     container_name: web
-    working_dir: /sammcb
     tty: true
     stdin_open: true
