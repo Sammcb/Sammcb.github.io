@@ -9,7 +9,7 @@ Fun Messages Sticker Pack filled with tasty plant-based food stickers!. More sti
 ![](/assets/images/plantbasedstickers/icon.png){:.device-image}
 {:.center-column}
 
-[{% include app-store-icon.html %}]()
+[{% include app-store-icon.html %}](https://apps.apple.com/us/app/plant-based-stickers/id1568584174)
 {:.center-column}
 
 

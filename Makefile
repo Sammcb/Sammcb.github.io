@@ -6,15 +6,15 @@ help:
 
 # target: start - Start the Docker containers
 start:
-	docker-compose up -d --build
+	docker compose up -d --build
 
 # target: stop - Stop and destroy the running containers
 stop:
-	docker-compose down
+	docker compose down
 
 # target: down - Stop and remove everything
 down:
-	docker-compose down --rmi 'all' -v
+	docker compose down --rmi 'all' -v
 	docker container prune -f
 	docker image prune -af
 	docker volume prune -f
