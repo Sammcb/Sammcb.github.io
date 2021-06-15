@@ -4,6 +4,9 @@ permalink: /devlogs
 title: Devlogs
 css: /assets/styles/devlogs.css
 ---
+### MountainScape
+[Devlog 0: Steep Learning Slope](/devlogs/mountainscape/0)
+
 ### Anniversary
 
 [Devlog 0: Learning to LÖVE](/devlogs/anniversary/0)
