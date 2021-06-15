@@ -138,6 +138,8 @@ To finish up with this initial step, I wrote a function to draw a line, where th
 ![](/assets/images/devlogs/mountainscape/devlog0/perlin.png){:.blog-image}
 {:.center-column}
 
+Whew, that was a lot of math! I promise the next devlog in the series will be better in every way: less math and more pretty pictures 😄.
+
 ### Feedback
 {:.feedback}
 
