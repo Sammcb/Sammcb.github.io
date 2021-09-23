@@ -4,7 +4,7 @@ permalink: /tworooks
 title: Two Rooks
 css: /assets/styles/app.css
 ---
-Two Rooks is a simple, colorful chess app with multiple themes! Currently, only local (two players on the same device) games are supported. To suggest new themes, check out the [guide](https://github.com/Sammcb/TwoRooks/discussions/3).
+Two Rooks is a simple, colorful chess app where you can create your own themes! Currently, only local (two players on the same device) games are supported.
 
 ![](/assets/images/tworooks/device.png){:.device-image}
 {:.center-column}
@@ -13,7 +13,7 @@ Two Rooks is a simple, colorful chess app with multiple themes! Currently, only 
 {:.center-column}
 
 
-For information on how to file a bug report or feature request, check out the Two Rooks [discussions](https://github.com/Sammcb/TwoRooks/discussions/1).
+For information on how to file a bug report or feature request, check out the Two Rooks [discussions](https://github.com/Sammcb/TwoRooks/discussions/1). With the new 2.0.0 update, there is no longer a need ot suggest themes so that discussion has been deleted. If you would like to add the old themes to the app, check out this [discussion](https://github.com/Sammcb/TwoRooks/discussions/5) for the colors codes and emojis.
 
 ## [Privacy Policy 🔗](#privacy){:.privacy-link}
 
