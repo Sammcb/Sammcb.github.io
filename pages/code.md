@@ -8,6 +8,10 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Games
 
+### [Dueling Disks • 2021](/duelingdisks)
+
+Dueling Disks is a simple reversi app built using SpriteKit and SwiftUI for iOS and iPadOS. Includes the ability to play local games on the same device. Will include multiplayer support over GameCenter in the future. Check out the [code](https://github.com/Sammcb/DuelingDisks).
+
 ### Anniversary • 2021
 
 This is a small game I made using the LÖVE engine for my girlfriend to celebrate our anniversary. I made all the graphics in Aesprite and music using BeepBox. Check out the [code](https://github.com/Sammcb/Anniversary).
