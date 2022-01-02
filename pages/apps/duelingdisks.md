@@ -12,7 +12,7 @@ Dueling Disks is a simple, colorful reversi app where you can create your own th
 ![](/assets/images/duelingdisks/tvos.png){:.device-image}
 {:.center-column}
 
-[{% include app-store-icon.html %}]()
+[{% include app-store-icon.html %}](https://apps.apple.com/ae/app/dueling-disks/id1602256080?uo=2)
 {:.center-column}
 
 For information on how to file a bug report or feature request, check out the Two Rooks [discussions](https://github.com/Sammcb/DuelingDisks/discussions/2).
