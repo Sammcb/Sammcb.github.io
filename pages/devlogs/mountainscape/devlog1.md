@@ -55,6 +55,7 @@ This system will make it easy for me to adjust the verticality and position of t
 The result were actual mountain-y looking mountains 🏔!
 
 ![](/assets/images/devlogs/mountainscape/devlog1/mountain.png){:.blog-image}
+{:.center-column}
 
 ## Blooper Reel
 
