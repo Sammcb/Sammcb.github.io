@@ -9,6 +9,8 @@ css: /assets/styles/devlogs.css
 
 [Devlog 1: Rough Around the Edges](/devlogs/mountainscape/1)
 
+[Devlog 2: Look at that View!](/devlogs/mountainscape/2)
+
 ### Anniversary
 
 [Devlog 0: Learning to LÖVE](/devlogs/anniversary/0)
