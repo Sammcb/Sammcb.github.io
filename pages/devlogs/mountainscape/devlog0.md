@@ -51,13 +51,13 @@ To start, I needed to build a decent height map generator upon which my "rain ðŸ
 * Find the dot products for each candidate point
 * Interpolate using those dot product values to find the height for a given candidate point on the x-axis
 
-First, I needed to create an *n*-dimensional grid. In my 1D space, this mean effectively choosing spacing for tick marks along a line. This spacing, which I called `step` in my functions, determines the frequency of potential "peaks". In the 1D space, the process for generating the gradient vectors just requires choosing a random number in the range **[-1, 1]** for each tick mark.
+First, I needed to create an *n*-dimensional grid. In my 1D space, this mean effectively choosing spacing for tick marks along a line. This spacing, or `wavelength`, determines the frequency of potential peaks produced by the noise. In the 1D space, the process for generating the gradient vectors just requires choosing a random number in the range **[-1, 1]** for each tick mark.
 
 ```javascript
 // mountains.js
-function generateGradients(step) {
+function generateGradients(wavelength) {
 	let gradients = []
-	for (let x = 0; x < width + step; x += step) {
+	for (let x = 0; x < width + wavelength; x += wavelength) {
 		gradients.push(randomFloatInRange(-1, 1))
 	}
 
@@ -67,23 +67,23 @@ function generateGradients(step) {
 
 ## Onwards and Upwards
 
-To find the dot products for a given candidate point (which in my 1D case is just a random `x` coordinate), I first, needed to find the "cell" that contained my candidate point. For my implementation, this meant finding which step contained my candidate point. Finding the cell then allowed me to easily fetch the two generated gradient values on the edges (or "corners" as I called them to stay consistent with the algorithm description) of the cell.
+To find the dot products for a given candidate point (which in my 1D case is just a random `x` coordinate), I first, needed to find the "cell" that contains my candidate point. For my implementation, this meant finding which step contained my candidate point. Finding the cell then allowed me to easily fetch the two generated gradient values on the edges (or "corners" as I called them to stay consistent with the algorithm description) of the cell.
 
 ```javascript
 // mountains.js
-function getCornerGradients(x, step, gradients) {
-	const cell = Math.floor(x / step)
+function getCornerGradients(x, wavelength, gradients) {
+	const cell = Math.floor(x / wavelength)
 	return [gradients[cell], gradients[cell + 1]]
 }
 ```
 
-Then to get the offset vectors, I just need to find the vector from my candidate point to the corners of the cell. The only thing I changed was scaling `x` so it was in the range **[0, 1]**, which makes some later parts of the algorithm easier to compute.
+Then to get the offset vectors, I just need to find the vector from my candidate point to the corners of the cell. The only thing I changed was normalizing `x` so it was in the range **[0, 1]**, which makes some later parts of the algorithm easier to compute.
 
 ```javascript
 // mountains.js
-function getOffsetVectors(x, step, cornerGradients) {
-	const scaledX = (x % step) / step
-	return [-scaledX, 1 - scaledX]
+function getOffsetVectors(x, wavelength) {
+	const normalizedX = (x % wavelength) / wavelength
+	return [-normalizedX, 1 - normalizedX]
 }
 ```
 
@@ -91,9 +91,9 @@ Finally I was able to compute the dot products of the gradients and the offset v
 
 ```javascript
 // mountains.js
-function getDotProducts(x, step, gradients) {
-	const cornerGradients = getCornerGradients(x, step, gradients)
-	const offsetVectors = getOffsetVectors(x, step, cornerGradients)
+function getDotProducts(x, wavelength, gradients) {
+	const cornerGradients = getCornerGradients(x, wavelength, gradients)
+	const offsetVectors = getOffsetVectors(x, wavelength)
 	return [cornerGradients[0] * offsetVectors[0], cornerGradients[1] * offsetVectors[1]]
 }
 ```
@@ -104,9 +104,9 @@ For the third and final step, I just needed to write a function to interpolate b
 
 ```javascript
 // mountains.js
-function interpolate(x, step, dotProducts) {
-	const scaledX = (x % step) / step
-	return dotProducts[0] + smoothstep(scaledX) * (dotProducts[1] - dotProducts[0])
+function interpolate(x, wavelength, dotProducts) {
+	const normalizedX = (x % wavelength) / wavelength
+	return dotProducts[0] + smoothstep(normalizedX) * (dotProducts[1] - dotProducts[0])
 }
 ```
 
@@ -114,18 +114,14 @@ Putting it all together, I was able to calculate 1D Perlin noise!
 
 ```javascript
 // mountains.js
-function perlin(frequency) {
-	if (frequency <= 0) {
-		throw Error('Frequency must be greater than 0.')
-	}
-
-	const gradients = generateGradients(frequency)
+function perlin(wavelength) {
+	const gradients = generateGradients(wavelength)
 	let noise = []
 
 	for (let x = 0; x < width; x++) {
-		const cornerGradients = getCornerGradients(x, frequency, gradients)
-		const dotProducts = getDotProducts(x, frequency, gradients)
-		const interpolated = interpolate(x, frequency, dotProducts)
+		const cornerGradients = getCornerGradients(x, wavelength, gradients)
+		const dotProducts = getDotProducts(x, wavelength, gradients)
+		const interpolated = interpolate(x, wavelength, dotProducts)
 		noise.push(interpolated)
 	}
 
@@ -143,4 +139,4 @@ Whew, that was a lot of math! I promise the next devlog in the series will be be
 ### Feedback
 {:.feedback}
 
-Thank you for reading! If you have any corrections, please create an [issue](https://github.com/Sammcb/Sammcb.github.io/issues/new/choose). If you have any general suggestions or feedback, check out the [discussion](https://github.com/Sammcb/Sammcb.github.io/discussions/10) for this devlog!
+Thank you for reading! If you have any corrections, please create an [issue](https://github.com/Sammcb/Sammcb.github.io/issues/new/choose). If you have any general suggestions or feedback, check out my devlog [discussion](https://github.com/Sammcb/Sammcb.github.io/discussions/3)!

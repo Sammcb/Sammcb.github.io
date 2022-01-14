@@ -7,6 +7,8 @@ css: /assets/styles/devlogs.css
 ### MountainScape
 [Devlog 0: Steep Learning Slope](/devlogs/mountainscape/0)
 
+[Devlog 1: Rough Around the Edges](/devlogs/mountainscape/1)
+
 ### Anniversary
 
 [Devlog 0: Learning to LÖVE](/devlogs/anniversary/0)

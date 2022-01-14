@@ -76,4 +76,4 @@ I hope you enjoyed this devlog series. I definitely will write more in the futur
 ### Feedback
 {:.feedback}
 
-Thank you for reading! If you have any corrections, please create an [issue](https://github.com/Sammcb/Sammcb.github.io/issues/new/choose). If you have any general suggestions or feedback, check out the [discussion](https://github.com/Sammcb/Sammcb.github.io/discussions/7) for this devlog!
+Thank you for reading! If you have any corrections, please create an [issue](https://github.com/Sammcb/Sammcb.github.io/issues/new/choose). If you have any general suggestions or feedback, check out my devlog [discussion](https://github.com/Sammcb/Sammcb.github.io/discussions/3)!
