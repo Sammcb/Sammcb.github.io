@@ -36,7 +36,7 @@ Simple JavaScript function to generate a gentle snow effect over a webpage. Chec
 
 ### [MountainScape • 2020-2022](/MountainScape)
 
-Program to generate a mountain scape using semi-random combinations of various sine and cosine functions. Built using JavaScript and the HTML canvas. Check out the [code](https://github.com/Sammcb/MountainScape).
+Program to generate a mountain scape using fractal noise composed from Perlin noise octaves. Built using JavaScript and the HTML canvas. Check out the [code](https://github.com/Sammcb/MountainScape).
 
 ### Double Pendulum • 2019
 
