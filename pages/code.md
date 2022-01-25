@@ -29,13 +29,13 @@ Fally Bally is a simple, minimalist arcade game written in Swift using SpriteKit
 
 ## Generative Art
 
-### [SnowEffect • 2020](/SnowEffect)
-
-Simple JavaScript function to generate a gentle snow effect over a webpage. Check out the [code](https://github.com/Sammcb/SnowEffect).
-
 ### [MountainScape • 2020-2022](/MountainScape)
 
 Program to generate a mountain scape using fractal noise composed from Perlin noise octaves. Built using JavaScript and the HTML canvas. Check out the [code](https://github.com/Sammcb/MountainScape).
+
+### [SnowEffect • 2020](/SnowEffect)
+
+Simple JavaScript function to generate a gentle snow effect over a webpage. Check out the [code](https://github.com/Sammcb/SnowEffect).
 
 ### Double Pendulum • 2019
 
@@ -57,6 +57,6 @@ ColorsFinder is a web tool that helps find evenly spaced color gradients with ar
 
 ## Websites
 
-### Personal Website • 2019-2021
+### Personal Website • 2019-2022
 
 This website. Built using Jekyll and hosted on GitHub Pages. Provides a place to keep track of projects and practice web-based development. Check out the [code](https://github.com/Sammcb/Sammcb.github.io).
