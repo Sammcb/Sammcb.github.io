@@ -8,7 +8,6 @@
 		{% endif %}
 		<link rel="shortcut icon" href="/assets/images/main/logo.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="/assets/scripts/main.js"></script>
 		{% if page.js %}
 			<script src="{{ page.js }}"></script>
 		{% endif %}
@@ -17,19 +16,10 @@
 	<body {% if page.onresize %} onresize="{{ page.onresize }}" {% endif %} {% if page.onload %} onload="{{ page.onload }}" {% endif %}>
 		<header>
 			<nav>
-				<div id="home-link-group" class="nav-link-group">
-					<a class="nav-link" href="/">Home</a>
-					<button id="mobile-toggle" class="nav-link" onclick="toggleNav()">&#9776;</button>
-				</div>
-				<div class="nav-link-group">
-					<a class="nav-link" href="/code">Code</a>
-				</div>
-				<div class="nav-link-group">
-					<a class="nav-link" href="/devlogs">Devlogs</a>
-				</div>
-				<div class="nav-link-group">
-					<a class="nav-link" href="/art">Art</a>
-				</div>
+				<a href="/">Home</a>
+				<a href="/code">Code</a>
+				<a href="/devlogs">Devlogs</a>
+				<a href="/art">Art</a>
 			</nav>
 		</header>
 		<div id="content">
