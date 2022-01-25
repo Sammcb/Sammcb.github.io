@@ -17,6 +17,7 @@ exclude:
   - docker-compose.yml
   - Gemfile
   - Gemfile.lock
+include: [CNAME]
 collections:
   apps:
     output: true
