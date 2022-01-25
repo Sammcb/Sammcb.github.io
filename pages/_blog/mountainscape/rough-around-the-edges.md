@@ -1,8 +1,7 @@
 ---
-layout: readable
-permalink: /devlogs/mountainscape/1
 title: Rough Around the Edges
-css: /assets/styles/devlog.css
+project: MountainScape
+index: 1
 ---
 ## Fractals All Around
 

@@ -1,8 +1,7 @@
 ---
-layout: readable
-permalink: /devlogs/mountainscape/2
 title: Look at that View!
-css: /assets/styles/devlog.css
+project: MountainScape
+index: 2
 ---
 ## Color Me Impressed
 

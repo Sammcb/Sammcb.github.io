@@ -1,8 +1,5 @@
 ---
-layout: app
-permalink: /duelingdisks
 title: Dueling Disks
-css: /assets/styles/app.css
 ---
 Dueling Disks is a simple, colorful reversi app where you can create your own themes! Currently, only local (two players on the same device) games are supported.
 

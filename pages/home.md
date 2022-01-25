@@ -2,7 +2,7 @@
 layout: readable-centered
 permalink: /
 title: Home
-css: /assets/styles/home.css
+css: home
 ---
 ![](/assets/images/home/profile.png)
 

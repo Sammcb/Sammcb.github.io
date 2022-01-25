@@ -1,8 +1,7 @@
 ---
-layout: readable
-permalink: /devlogs/anniversary/2
 title: Happy Anniversary, LÖVE Sam
-css: /assets/styles/devlog.css
+project: Anniversary
+index: 2
 ---
 ## Endgame
 

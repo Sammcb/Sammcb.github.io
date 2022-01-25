@@ -1,8 +1,7 @@
 ---
-layout: readable
-permalink: /devlogs/anniversary/0
 title: Learning to LÖVE
-css: /assets/styles/devlog.css
+project: Anniversary
+index: 0
 ---
 ## Background
 

@@ -1,8 +1,7 @@
 ---
-layout: readable
-permalink: /devlogs/anniversary/1
 title: Game Day
-css: /assets/styles/devlog.css
+project: Anniversary
+index: 1
 ---
 ## A-maze-ing Design
 

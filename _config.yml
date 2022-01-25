@@ -17,3 +17,37 @@ exclude:
   - docker-compose.yml
   - Gemfile
   - Gemfile.lock
+collections:
+  apps:
+    output: true
+    permalink: /:name
+  art:
+    output: true
+    permalink: /:collection/:name
+    order:
+      - solarsystem.md
+      - crispoctoberwalk.md
+  blog:
+    output: true
+    permalink: /:collection/:name
+    sort_by: index
+collections_dir: pages
+defaults:
+  - scope:
+      path: ''
+      type: art
+    values:
+      layout: readable-centered
+      css: artwork
+  - scope:
+      path: ''
+      type: blog
+    values:
+      layout: readable
+      css: blog
+  - scope:
+      path: ''
+      type: apps
+    values:
+      layout: readable
+      css: app

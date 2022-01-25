@@ -1,8 +1,5 @@
 ---
-layout: app
-permalink: /tworooks
 title: Two Rooks
-css: /assets/styles/app.css
 ---
 Two Rooks is a simple, colorful chess app where you can create your own themes! Currently, only local (two players on the same device) games are supported.
 

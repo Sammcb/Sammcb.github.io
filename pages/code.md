@@ -2,7 +2,6 @@
 layout: readable
 permalink: /code
 title: Code
-css: /assets/styles/code.css
 ---
 This is a collection of some of my favorite coding projects. Check out all of my projects on GitHub.
 

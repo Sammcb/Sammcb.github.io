@@ -1,8 +1,5 @@
 ---
-layout: app
-permalink: /plantbasedstickers
 title: Plant-Based Stickers
-css: /assets/styles/app.css
 ---
 Fun Messages Sticker Pack filled with tasty plant-based food stickers!. More stickers on the way soon!
 

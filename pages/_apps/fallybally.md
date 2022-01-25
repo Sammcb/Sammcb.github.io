@@ -1,8 +1,5 @@
 ---
-layout: app
-permalink: /fallybally
 title: Fally Bally
-css: /assets/styles/app.css
 ---
 Fally Bally is a fun, minimalistic arcade game where you fall down an endless series of platforms and the more you land on, the better.
 

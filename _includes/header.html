@@ -4,9 +4,9 @@
 		<link rel="stylesheet" href="/assets/styles/main.css">
 		<link rel="stylesheet" href="/assets/styles/syntax.css">
 		{% if page.css %}
-			<link rel="stylesheet" href="{{ page.css }}">
+			<link rel="stylesheet" href="/assets/styles/{{ page.css }}.css">
 		{% endif %}
-		<link rel="shortcut icon" href="/assets/images/main/logo.ico">
+		<link rel="shortcut icon" href="/assets/images/favicon.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		{% if page.js %}
 			<script src="{{ page.js }}"></script>
@@ -18,7 +18,7 @@
 			<nav>
 				<a href="/">Home</a>
 				<a href="/code">Code</a>
-				<a href="/devlogs">Devlogs</a>
+				<a href="/blog">Blog</a>
 				<a href="/art">Art</a>
 			</nav>
 		</header>

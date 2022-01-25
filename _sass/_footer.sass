@@ -8,19 +8,17 @@ footer
 	@media (max-width: $max-mobile-width)
 		flex-direction: column-reverse
 
-#footer-text
-	font-size: 12px
-	text-align: center
-
-#footer-icon
-	height: $footer-icon-size
-	width: $footer-icon-size
-	fill: text
-
 	svg
-		width: $footer-icon-size
-		height: $footer-icon-size
+		fill: text
 
 		@media(hover: hover)
 			&:hover
 				fill: gray
+
+	a
+		display: flex
+		flex-shrink: 1
+
+	p
+		font-size: 12px
+		text-align: center

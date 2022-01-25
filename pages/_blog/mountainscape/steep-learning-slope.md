@@ -1,8 +1,7 @@
 ---
-layout: readable
-permalink: /devlogs/mountainscape/0
 title: Steep Learning Slope
-css: /assets/styles/devlog.css
+project: MountainScape
+index: 0
 ---
 ## Prologue
 
