@@ -2,7 +2,6 @@
 layout: readable
 permalink: /art
 title: Art
-css: list
 ---
 These are some digital artworks I made while practicing with vector graphics and pixel art.
 

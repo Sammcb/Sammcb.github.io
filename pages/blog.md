@@ -2,7 +2,6 @@
 layout: readable
 permalink: /blog
 title: Blog
-css: list
 ---
 ### MountainScape
 {% assign articles = site.blog | where_exp: "article", "article.project == 'MountainScape'" %}
