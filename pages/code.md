@@ -43,6 +43,10 @@ Generative art program which produced varied artworks by plotting the movement o
 
 ## Tools
 
+### [ReversiColors • 2022](/ReversiColors)
+
+ReversiColors is a web tool for quickly picking pleasent color scemes for simple reversi boards. Check out the [code](https://github.com/Sammcb/ReversiColors).
+
 ### [ChessColors • 2021](/ChessColors)
 
 ChessColors is a web tool for quickly picking pleasent color scemes for simple chess boards. Check out the [code](https://github.com/Sammcb/ChessColors).
