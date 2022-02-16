@@ -7,64 +7,60 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Games
 
-### [Dueling Disks • 2021](/duelingdisks)
+### [Gradient Games • 2022](/gradientgames)
 
-Dueling Disks is a simple reversi app built using SpriteKit and SwiftUI for iOS and iPadOS. Includes the ability to play local games on the same device. Will include multiplayer support over GameCenter in the future. Check out the [code](https://github.com/Sammcb/DuelingDisks).
+[Gradient Games](https://github.com/Sammcb/GradientGames) is a simple board game app built using SpriteKit and SwiftUI for iOS, iPadOS, and tvOS. Includes the ability to play local games on the same device, plus creating and sharing themes.
 
 ### Anniversary • 2021
 
-This is a small game I made using the LÖVE engine for my girlfriend to celebrate our anniversary. I made all the graphics in Aesprite and music using BeepBox. Check out the [code](https://github.com/Sammcb/Anniversary).
-
-### [Two Rooks • 2021](/tworooks)
-
-Two Rooks is a simple chess app built using SpriteKit and SwiftUI for iOS and iPadOS. Includes the ability to play local games on the same device. Will include multiplayer support over GameCenter in the future. Check out the [code](https://github.com/Sammcb/TwoRooks).
+[Anniversary](https://github.com/Sammcb/Anniversary) is a small game I made using the LÖVE engine for my girlfriend to celebrate our anniversary. I made all the graphics in Aesprite and music using BeepBox.
 
 ### Centauri • 2020
 
-A short text-based adventure game inspired by The Martian and Three Body Problem. Check out the [code](https://github.com/Sammcb/Centauri).
+[Centauri](https://github.com/Sammcb/Centauri) is a short text-based adventure game inspired by The Martian and Three Body Problem.
 
 ### [Fally Bally • 2014-2021](/fallybally)
 
-Fally Bally is a simple, minimalist arcade game written in Swift using SpriteKit for iOS and iPadOS. I originially co-developed it back in 2014. It was written in Objective-C and relied on Apple's iAd system for generating revenue. In 2021, I completely redesigned and rewrote the app from the ground up and released it as a new app under the same name. Check out the [code](https://github.com/Sammcb/FallyBally).
+[Fally Bally](https://github.com/Sammcb/FallyBally) is a simple, minimalist arcade game written in Swift using SpriteKit for iOS and iPadOS. I originially co-developed it back in 2014. It was written in Objective-C and relied on Apple's iAd system for generating revenue. In 2021, I completely redesigned and rewrote the app from the ground up and released it as a new app under the same name.
 
 ## Generative Art
 
 ### [MountainScape • 2020-2022](/MountainScape)
 
-Program to generate a mountain scape using fractal noise composed from Perlin noise octaves. Built using JavaScript and the HTML canvas. Check out the [code](https://github.com/Sammcb/MountainScape).
+[MountainScape](https://github.com/Sammcb/MountainScape) is a program to generate a mountain scape using fractal noise composed from Perlin noise octaves. Built using JavaScript and the HTML canvas.
 
 ### [SnowEffect • 2020](/SnowEffect)
 
-Simple JavaScript function to generate a gentle snow effect over a webpage. Check out the [code](https://github.com/Sammcb/SnowEffect).
+[SnowEffect](https://github.com/Sammcb/SnowEffect) is a simple JavaScript function to generate a gentle snow effect over a webpage.
 
 ### Double Pendulum • 2019
 
-Generative art program which produced varied artworks by plotting the movement of a double pendulum with randomized initial conditions. Speed-based coloration using custom implementation of Painter's algorithm and ColorsFinder algorithm. Built using Python and the Pillow and Scipy packages. Check out the [code](https://github.com/Sammcb/DoublePendulum).
+[Double Pendulum](https://github.com/Sammcb/DoublePendulum) is a generative art program which produced varied artworks by plotting the movement of a double pendulum with randomized initial conditions. Speed-based coloration using custom implementation of Painter's algorithm and ColorsFinder algorithm. Built using Python and the Pillow and Scipy packages.
 
 ## Tools
 
 ### [ReversiColors • 2022](/ReversiColors)
 
-ReversiColors is a web tool for quickly picking pleasent color scemes for simple reversi boards. Check out the [code](https://github.com/Sammcb/ReversiColors).
+[ReversiColors](https://github.com/Sammcb/ReversiColors) is a web tool for quickly picking pleasent color scemes for simple reversi boards.
 
 ### [ChessColors • 2021](/ChessColors)
 
-ChessColors is a web tool for quickly picking pleasent color scemes for simple chess boards. Check out the [code](https://github.com/Sammcb/ChessColors).
+[ChessColors](https://github.com/Sammcb/ChessColors) is a web tool for quickly picking pleasent color scemes for simple chess boards.
 
 ### MakeAppIcons • 2021
 
-Simple Swift command line tool to automatically generate correctly sized images from a source image for the AppIcon XCAsset appiconset in Xcode. Check out the [code](https://github.com/Sammcb/MakeAppIcons).
+[MakeAppIcons](https://github.com/Sammcb/MakeAppIcons) is a simple Swift command line tool to automatically generate correctly sized images from a source image for the AppIcon XCAsset appiconset in Xcode.
 
 ### [ColorsFinder • 2020](/ColorsFinder)
 
-ColorsFinder is a web tool that helps find evenly spaced color gradients with arbitrary interval values. Check out the [code](https://github.com/Sammcb/ColorsFinder).
+[ColorsFinder](https://github.com/Sammcb/ColorsFinder) is a web tool that helps find evenly spaced color gradients with arbitrary interval values.
 
 ## Websites
 
 ### [UVA Climate Stories • 2022](https://www.uvaclimatestories.com)
 
-Website I created and maintained for my girlfriend's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership. Check out the [code](https://github.com/UVAClimateStories/uvaclimatestories.github.com).
+[Website](https://github.com/UVAClimateStories/uvaclimatestories.github.com) I created and maintained for my girlfriend's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership.
 
 ### Personal Website • 2019-2022
 
-This website. Built using Jekyll and hosted on GitHub Pages. Provides a place to keep track of projects and practice web-based development. Check out the [code](https://github.com/Sammcb/Sammcb.github.io).
+[This website](https://github.com/Sammcb/Sammcb.github.io). Built using Jekyll and hosted on GitHub Pages. Provides a place to keep track of projects and practice web-based development.
