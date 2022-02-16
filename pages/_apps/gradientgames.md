@@ -16,11 +16,24 @@ For information on how to file a bug report or feature request, check out the Gr
 
 ### Chess
 
-[🌊 Ocean](https://www.sammcb.com/ChessColors/?symbol=%f0%9f%8c%8a&pieceLight=00c1ce&pieceDark=0100a7&squareLight=b2ecee&squareDark=0375fb), [🌲 Forest](https://www.sammcb.com/ChessColors/?symbol=%f0%9f%8c%b2&pieceLight=ffffff&pieceDark=000000&squareLight=cce8b5&squareDark=38571a), [🌑 Moon](https://www.sammcb.com/ChessColors/?symbol=%f0%9f%8c%91&pieceLight=ffffff&pieceDark=000000&squareLight=c0c0c0&squareDark=606060), [🍁 Fall](https://www.sammcb.com/ChessColors/?symbol=%f0%9f%8d%81&pieceLight=ffffff&pieceDark=000000&squareLight=ffad3a&squareDark=b22a00), [❄️ Winter](https://www.sammcb.com/ChessColors/?symbol=%e2%9d%84%ef%b8%8f&pieceLight=444444&pieceDark=000000&squareLight=caf0fe&squareDark=76aac7), [🌸 Spring](https://www.sammcb.com/ChessColors/?symbol=%f0%9f%8c%b8&pieceLight=606060&pieceDark=000000&squareLight=fff76b&squareDark=b1dd8c), [☀️ Summer](https://www.sammcb.com/ChessColors/?symbol=%e2%98%80%ef%b8%8f&pieceLight=606060&pieceDark=000000&squareLight=fff995&squareDark=ffaa00)
+* [🌊 Ocean](https://www.sammcb.com/ChessColors/?symbol=🌊&pieceLight=00c1ce&pieceDark=0100a7&squareLight=b2ecee&squareDark=0375fb)
+* [🌲 Forest](https://www.sammcb.com/ChessColors/?symbol=🌲&pieceLight=ffffff&pieceDark=000000&squareLight=cce8b5&squareDark=38571a)
+* [🌑 Moon](https://www.sammcb.com/ChessColors/?symbol=🌑&pieceLight=ffffff&pieceDark=000000&squareLight=c0c0c0&squareDark=606060)
+* [🍁 Autumn](https://www.sammcb.com/ChessColors/?symbol=🍁&pieceLight=ffffff&pieceDark=000000&squareLight=ffad3a&squareDark=b22a00)
+* [❄️ Winter](https://www.sammcb.com/ChessColors/?symbol=❄️&pieceLight=444444&pieceDark=000000&squareLight=caf0fe&squareDark=76aac7)
+* [🌸 Spring](https://www.sammcb.com/ChessColors/?symbol=🌸&pieceLight=606060&pieceDark=000000&squareLight=fff76b&squareDark=b1dd8c)
+* [☀️ Summer](https://www.sammcb.com/ChessColors/?symbol=☀️&pieceLight=606060&pieceDark=000000&squareLight=fff995&squareDark=ffaa00)
 
 ### Reversi
 
-* WIP
+* [🌊 Ocean](https://www.sammcb.com/ReversiColors/?symbol=🌊&pieceLight=00c1ce&pieceDark=0100a7&square=0375fb&border=b2ecee)
+* [🌲 Forest](https://www.sammcb.com/ReversiColors/?symbol=🌲&pieceLight=ffffff&pieceDark=000000&square=38571a&border=cce8b5)
+* [🌑 Moon](https://www.sammcb.com/ReversiColors/?symbol=🌑&pieceLight=ffffff&pieceDark=000000&square=606060&border=c0c0c0)
+* [🍁 Autumn](https://www.sammcb.com/ReversiColors/?symbol=🍁&pieceLight=ffffff&pieceDark=000000&square=b22a00&border=ffad3a)
+* [❄️ Winter](https://www.sammcb.com/ReversiColors/?symbol=❄️&pieceLight=ffffff&pieceDark=000000&square=76aac7&border=caf0fe)
+* [🌸 Spring](https://www.sammcb.com/ReversiColors/?symbol=🌸&pieceLight=ffffff&pieceDark=000000&square=b1dd8c&border=fff76b)
+* [☀️ Summer](https://www.sammcb.com/ReversiColors/?symbol=☀️&pieceLight=ffffff&pieceDark=000000&square=ffaa00&border=fff995)
+
 
 ## [Privacy Policy 🔗](#privacy){:.privacy-link}
 
