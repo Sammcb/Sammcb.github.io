@@ -39,6 +39,10 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Tools
 
+### [CheckersColors • 2022](/CheckersColors)
+
+[CheckersColors](https://github.com/Sammcb/CheckersColors) is a web tool for quickly picking pleasent color scemes for simple checkers boards.
+
 ### [ReversiColors • 2022](/ReversiColors)
 
 [ReversiColors](https://github.com/Sammcb/ReversiColors) is a web tool for quickly picking pleasent color scemes for simple reversi boards.
