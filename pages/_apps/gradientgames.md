@@ -9,7 +9,7 @@ Gradient Games is a simple, colorful board game collection where you can create 
 ![](/assets/images/gradientgames/tvos.png){:.device-image}
 {:.center-column}
 
-[{% include app-store-icon.html %}]()
+[{% include app-store-icon.html %}](https://apps.apple.com/us/app/gradient-games/id1609975604)
 {:.center-column}
 
 For information on how to file a bug report or feature request, check out the Gradient Games [discussions](https://github.com/Sammcb/GradientGames/discussions/1). To get started, here are a few fun themes!
