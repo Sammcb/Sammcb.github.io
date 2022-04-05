@@ -23,6 +23,16 @@
 							"square": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
 							"border": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)"
 						}
+					},
+					{
+						"/": "/checkerscolors/*",
+						"?": {
+							"symbol": "*",
+							"pieceLight": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"pieceDark": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"squareLight": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"squareDark": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)"
+						}
 					}
 				]
 			}
