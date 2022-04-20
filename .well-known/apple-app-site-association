@@ -40,7 +40,7 @@
 				"appID": "J8P6BA4WGF.com.sammcb.SyncSong",
 				"components": [
 					{
-						"/": "/syncsong/spotify-callback",
+						"/": "/syncsong/spotify-callback/*",
 						"?": {
 							"code": "?*",
 							"state": "?*"
