@@ -1,7 +1,5 @@
 #!/bin/sh
 
-MINECRAFT_JAVA=~/Library/Application\ Support/minecraft/runtime/java-runtime-gamma/mac-os-arm64/java-runtime-gamma/jre.bundle/Contents/Home
-
 print_info() {
 	printf "\e[1;35m$1\e[0m - \e[0;37m$2\e[0m\n"
 }
