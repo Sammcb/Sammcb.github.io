@@ -12,7 +12,7 @@ exclude:
   - .gitignore
   - CNAME
   - LICENSE
-  - Makefile
+  - do.sh
   - README.md
   - docker-compose.yml
   - Gemfile

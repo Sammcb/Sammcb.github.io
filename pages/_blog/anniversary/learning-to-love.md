@@ -15,7 +15,7 @@ I had to consider the benefits of using a familiar engine that I knew would take
 
 When working on coding projects, I like to create Docker containers to help manage different system install requirements, enhance the portability of my code, and reduce system debugging issues. Unfortunately, I have not yet figured out how to connect a Docker container application to my host computer's graphical display (definitely something I want to explore in the future). For this reason, I decided not to make a container for this project.
 
-Another part of my workflow is to create a `Makefile` containing a bunch of important commands and build flows so I don't have to remember or look up common actions. I made a [`Makefile` template](https://gist.github.com/Sammcb/79982eb5adc5d54a2feb37c6487ef7d6) for this project and hosted it as a GitHub Gist.
+Another part of my workflow is to create a `do.sh` script containing a bunch of important commands and build flows so I don't have to remember or look up common actions. I based it off of a [template script](https://gist.github.com/Sammcb/91fa6292c75c49925516fbde29b57d11) I uploaded to GitHub Gist.
 
 ## Hello, World
 
@@ -37,7 +37,7 @@ I then ran my game by typing `open -n -a love .`{:.language-zsh} and was excited
 
 Being new to LÖVE, and completely underestimating my familiarity with Lua (I had used it a bit when messing with the [ComputerCraft](http://www.computercraft.info) Minecraft mod many years ago), I decided it would be important to figure out how to print debugging information to the console.
 
-This took a bit of trial and error, but eventually I figured out that I had to launch my game using the direct path to the `love.app` application instead of using the macOS `open`{:.language-zsh} command. During the process, however, I learned more about how to build a `.love` file and package an executable. I updated my `Makefile` template with these build paths, as they might be useful in the future.
+This took a bit of trial and error, but eventually I figured out that I had to launch my game using the direct path to the `love.app` application instead of using the macOS `open`{:.language-zsh} command. During the process, however, I learned more about how to build a `.love` file and package an executable. I updated my `do.sh` script with these build paths, as they might be useful in the future.
 
 ## Basic Player
 
