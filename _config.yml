@@ -12,6 +12,7 @@ exclude:
   - .gitignore
   - CNAME
   - LICENSE
+  - CODEOWNERS
   - do.sh
   - README.md
   - docker-compose.yml
