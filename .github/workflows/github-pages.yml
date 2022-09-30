@@ -6,15 +6,14 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     container:
-      image: jekyll/minimal
-      volumes:
-      - ${{ github.workspace }}:/srv/jekyll
+      image: ruby:latest
+      # volumes:
+      # - ${{ github.workspace }}:/srv/jekyll
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
     - name: Build site files
       run: |
-        chown -R jekyll:jekyll /srv/jekyll
         ./do.sh init
         ./do.sh build
       env:
