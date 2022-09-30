@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: jekyll/jekyll
-      volumes: [./:/srv/jekyll]
+      volumes:
+        - .:/srv/jekyll
       # options: --user root
     steps:
     - name: Checkout repository
