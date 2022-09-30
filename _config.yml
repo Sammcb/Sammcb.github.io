@@ -10,7 +10,6 @@ kramdown:
   smart_quotes: [apos, apos, quot, quot]
 exclude:
   - .gitignore
-  - CNAME
   - LICENSE
   - CODEOWNERS
   - do.sh
@@ -18,7 +17,7 @@ exclude:
   - docker-compose.yml
   - Gemfile
   - Gemfile.lock
-include: [CNAME, .well-known]
+include: [CNAME, .well-known, .nojekyll]
 collections:
   apps:
     output: true
