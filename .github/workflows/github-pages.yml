@@ -9,13 +9,12 @@ jobs:
       image: jekyll/minimal
       volumes:
       - ${{ github.workspace }}:/srv/jekyll
-      options: -u 0
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
     - name: Build site files
       run: |
-        echo $USER
+        chown -R jekyll:jekyll /srv/jekyll
         ./do.sh init
         ./do.sh build
       env:
