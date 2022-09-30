@@ -10,6 +10,7 @@ help() {
 	print_info down "Stop and destroy running containers"
 	print_info clean "Stop and aggressively remove everything"
 	print_info init "Install gems"
+	print_info update "Update all gems"
 	print_info build "Build site files"
 	print_info run "Start the web server"
 	print_info server_clean "Clean build artifacts"
@@ -33,6 +34,10 @@ clean() {
 
 init() {
 	bundle install
+}
+
+update() {
+	bundle update --all
 }
 
 build() {
