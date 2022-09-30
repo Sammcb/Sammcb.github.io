@@ -9,6 +9,9 @@ help() {
 	print_info up "Start Docker containers"
 	print_info down "Stop and destroy running containers"
 	print_info clean "Stop and aggressively remove everything"
+	print_info init "Install gems"
+	print_info update "Update all gems"
+	print_info build "Build site files"
 	print_info run "Start the web server"
 	print_info server_clean "Clean build artifacts"
 }
@@ -29,12 +32,24 @@ clean() {
 	docker system prune -f
 }
 
+init() {
+	bundle install
+}
+
+update() {
+	bundle update --all
+}
+
+build() {
+	jekyll b --disable-disk-cache
+}
+
 run() {
-	bundle exec jekyll s
+	jekyll s
 }
 
 server_clean() {
-	bundle exec jekyll clean
+	jekyll clean
 }
 
 if [ ${1:+x} ]; then

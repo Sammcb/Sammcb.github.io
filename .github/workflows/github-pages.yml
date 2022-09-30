@@ -5,15 +5,23 @@ on: [pull_request, workflow_dispatch]
 jobs:
   github-pages:
     runs-on: ubuntu-latest
+    container:
+      image: jekyll/minimal
+      volumes:
+      - ${{ github.workspace }}:/srv/jekyll
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/cache@v3
-      with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
-    - uses: helaili/jekyll-action@v2
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Build site files
+      run: |
+        chown -R jekyll:jekyll /srv/jekyll
+        ./do.sh init
+        ./do.sh build
+      env:
+        JEKYLL_ENV: production
+    - name: Push to pages branch
+      uses: Sammcb/push-action@v1.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        target_branch: 'gh-pages'
+        branch: gh-pages
+        paths: _site/*
