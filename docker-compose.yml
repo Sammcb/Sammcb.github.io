@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: jekyll/jekyll
+    image: jekyll/minimal
     ports: [4000:4000]
     volumes: [.:/srv/jekyll]
     command: sh
