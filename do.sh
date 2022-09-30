@@ -41,15 +41,15 @@ update() {
 }
 
 build() {
-	jekyll b --disable-disk-cache
+	bundle exec jekyll b --disable-disk-cache
 }
 
 run() {
-	jekyll s
+	bundle exec jekyll s
 }
 
 server_clean() {
-	jekyll clean
+	bundle exec jekyll clean
 }
 
 if [ ${1:+x} ]; then
