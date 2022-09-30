@@ -59,12 +59,11 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
-  x86_64-linux
-  x86_64-linux-musl
+  aarch64-linux
 
 DEPENDENCIES
   jekyll
   webrick
 
 BUNDLED WITH
-   2.3.22
+   2.3.7

@@ -6,21 +6,18 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     container:
-      image: jekyll/minimal
-      volumes:
-      - ${{ github.workspace }}:/srv/jekyll
+      image: ruby:latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
     - name: Build site files
       run: |
-        chown -R jekyll:jekyll /srv/jekyll
         ./do.sh init
         ./do.sh build
       env:
         JEKYLL_ENV: production
     - name: Push to pages branch
-      uses: Sammcb/push-action@v1.0.0
+      uses: Sammcb/push-action@v1.1.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
