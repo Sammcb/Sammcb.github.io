@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v3
     - name: Build site files
       run: |
-        chown -R jekyll:jekyll /
+        chown -R jekyll:jekyll /srv/jekyll
         ./do.sh init
         ./do.sh build
       env:
