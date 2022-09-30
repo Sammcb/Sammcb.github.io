@@ -1,6 +1,9 @@
 name: Build and deploy
 
-on: [pull_request, workflow_dispatch]
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
