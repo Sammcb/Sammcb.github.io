@@ -8,13 +8,14 @@ jobs:
     container:
       image: jekyll/jekyll
       volumes:
-        - ${{ github.workspace }}:/srv/jekyll
+      - ${{ github.workspace }}:/srv/jekyll
       # options: --user root
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
     - name: Build site files
       run: |
+        chown -R jekyll:jekyll /
         ./do.sh init
         ./do.sh build
       env:
