@@ -14,6 +14,7 @@ jobs:
     - name: Build site files
       run: |
         ./do.sh init
+        mkdir _site
         ./do.sh build
     - name: Push to pages branch
       uses: Sammcb/push-action@v1.0.0
