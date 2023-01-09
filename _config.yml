@@ -9,15 +9,15 @@ kramdown:
   auto_ids: false
   smart_quotes: [apos, apos, quot, quot]
 exclude:
-  - .gitignore
-  - LICENSE
-  - CODEOWNERS
-  - do.sh
-  - README.md
-  - docker-compose.yml
-  - Gemfile
-  - Gemfile.lock
-  - CNAME
+- .gitignore
+- LICENSE
+- CODEOWNERS
+- do.sh
+- README.md
+- docker-compose.yml
+- Gemfile
+- Gemfile.lock
+- CNAME
 include: [.well-known]
 collections:
   apps:
@@ -27,29 +27,30 @@ collections:
     output: true
     permalink: /:collection/:name
     order:
-      - solarsystem.md
-      - crispoctoberwalk.md
+    - solarsystem.md
+    - crispoctoberwalk.md
+    - halloween.md
   blog:
     output: true
     permalink: /:collection/:name
     sort_by: index
 collections_dir: pages
 defaults:
-  - scope:
-      path: ''
-      type: art
-    values:
-      layout: readable-centered
-      css: artwork
-  - scope:
-      path: ''
-      type: blog
-    values:
-      layout: readable
-      css: blog
-  - scope:
-      path: ''
-      type: apps
-    values:
-      layout: readable
-      css: app
+- scope:
+    path: ''
+    type: art
+  values:
+    layout: readable-centered
+    css: artwork
+- scope:
+    path: ''
+    type: blog
+  values:
+    layout: readable
+    css: blog
+- scope:
+    path: ''
+    type: apps
+  values:
+    layout: readable
+    css: app
