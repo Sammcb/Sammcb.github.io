@@ -50,6 +50,7 @@ run() {
 
 server_clean() {
 	jekyll clean
+	rm -f Gemfile.lock
 }
 
 if [ ${1:+x} ]; then
