@@ -9,7 +9,10 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ### [Gradient Games • 2022](/gradientgames)
 
-[Gradient Games](https://github.com/Sammcb/GradientGames) is a simple board game app built using SpriteKit and SwiftUI for iOS, iPadOS, and tvOS. Includes the ability to play local games on the same device, plus creating and sharing themes.
+[Gradient Games](https://github.com/Sammcb/GradientGames) is a simple board game app built using SpriteKit and SwiftUI for iOS, iPadOS, and tvOS. Includes the ability to play local games on the same device, plus creating and sharing themes. You can also create and share themes on the web using the theme designers:
+- [Chess](/ChessColors)
+- [Reversi](/ReversiColors)
+- [Checkers](/CheckersColors)
 
 ### Anniversary • 2021
 
@@ -39,18 +42,6 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Tools
 
-### [CheckersColors • 2022](/CheckersColors)
-
-[CheckersColors](https://github.com/Sammcb/CheckersColors) is a web tool for quickly picking pleasent color scemes for simple checkers boards.
-
-### [ReversiColors • 2022](/ReversiColors)
-
-[ReversiColors](https://github.com/Sammcb/ReversiColors) is a web tool for quickly picking pleasent color scemes for simple reversi boards.
-
-### [ChessColors • 2021](/ChessColors)
-
-[ChessColors](https://github.com/Sammcb/ChessColors) is a web tool for quickly picking pleasent color scemes for simple chess boards.
-
 ### MakeAppIcons • 2021
 
 [MakeAppIcons](https://github.com/Sammcb/MakeAppIcons) is a simple Swift command line tool to automatically generate correctly sized images from a source image for the AppIcon XCAsset appiconset in Xcode.
@@ -61,7 +52,7 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Websites
 
-### [UVA Climate Stories • 2022](https://www.uvaclimatestories.com)
+### UVA Climate Stories • 2022
 
 [Website](https://github.com/UVAClimateStories/uvaclimatestories.github.com) I created and maintained for my girlfriend's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership.
 
