@@ -17,7 +17,6 @@ exclude:
 - docker-compose.yml
 - Gemfile
 - Gemfile.lock
-- CNAME
 include: [.well-known]
 collections:
   apps:
