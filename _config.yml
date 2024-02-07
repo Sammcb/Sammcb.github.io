@@ -53,3 +53,5 @@ defaults:
   values:
     layout: readable
     css: app
+favicon:
+  source: assets/images/favicon.svg

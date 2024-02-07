@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		{% favicon %}
 		<link rel="stylesheet" href="/assets/styles/main.css">
 		<link rel="stylesheet" href="/assets/styles/syntax.css">
-		{% if page.css %}
-			<link rel="stylesheet" href="/assets/styles/{{ page.css }}.css">
-		{% endif %}
-		<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/16x16.png">
-		<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon/48x48.png">
-		<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/192x192.png">
-		<link rel="icon" type="image/png" sizes="167x167" href="/assets/images/favicon/167x167.png">
-		<link rel="icon" type="image/png" sizes="180x180" href="/assets/images/favicon/180x180.png">
+		{%- if page.css %}
+		<link rel="stylesheet" href="/assets/styles/{{ page.css }}.css">
+		{%- endif %}
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		{% if page.js %}
-			<script src="/assets/scripts/{{ page.js }}.js"></script>
-		{% endif %}
+		{%- if page.js %}
+		<script src="/assets/scripts/{{ page.js }}.js"></script>
+		{%- endif %}
 		<title>{{ page.title }}</title>
 	</head>
 	<body>
+		{%- if page.hideHeader != true %}
 		<header>
 			<nav>
 				<a href="/">Home</a>
@@ -27,4 +23,5 @@
 				<a href="/art">Art</a>
 			</nav>
 		</header>
+		{%- endif %}
 		<div id="content">

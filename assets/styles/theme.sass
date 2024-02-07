@@ -1,0 +1,25 @@
+---
+---
+#content
+	align-items: center
+	flex-grow: unset
+
+#theme
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-column-gap: 10px
+	justify-items: end
+	align-items: center
+
+	p:nth-child(odd)
+		justify-self: start
+		font-weight: bold
+
+.color-display
+	border: 1px solid text
+	border-radius: 50%
+	height: 50%
+	aspect-ratio: 1
+
+p
+	line-height: unset
