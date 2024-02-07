@@ -1,11 +1,11 @@
 version: '3'
 services:
   web:
-    image: ruby:3.1
+    image: ruby:3.3.0
     ports: [4000:4000]
     volumes: [.:/code]
     working_dir: /code
-    command: bash
+    command: sh
     container_name: web
     tty: true
     stdin_open: true
