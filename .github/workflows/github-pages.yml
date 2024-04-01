@@ -25,7 +25,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Setup Pages
-      uses: actions/configure-pages@v4
+      uses: actions/configure-pages@v5
     - name: Build site files
       run: |
         ./do.sh init
