@@ -33,6 +33,39 @@
 							"squareLight": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
 							"squareDark": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)"
 						}
+					},
+					{
+						"/": "/gradientgames/theme/*",
+						"?": {
+							"symbol": "*",
+							"game": "chess",
+							"pieceLight": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"pieceDark": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"squareLight": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"squareDark": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)"
+						}
+					},
+					{
+						"/": "/gradientgames/theme/*",
+						"?": {
+							"symbol": "*",
+							"game": "reversi",
+							"pieceLight": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"pieceDark": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"borders": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"squares": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)"
+						}
+					},
+					{
+						"/": "/gradientgames/theme/*",
+						"?": {
+							"symbol": "*",
+							"game": "checkers",
+							"pieceLight": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"pieceDark": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"squareLight": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)",
+							"squareDark": "$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)$(xdigit)"
+						}
 					}
 				]
 			},
