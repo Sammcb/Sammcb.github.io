@@ -1,0 +1,33 @@
+@use 'variables';
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px variables.$page-padding-horizontal;
+  border-top: 1px solid text;
+
+  @media(max-width: variables.$max-mobile-width) {
+    flex-direction: column-reverse;
+  }
+
+  svg {
+    fill: text;
+
+    @media(hover: hover) {
+      &:hover {
+        fill: gray;
+      }
+    }
+  }
+
+  a {
+    display: flex;
+    flex-shrink: 1;
+  }
+
+  p {
+    font-size: 12px;
+    text-align: center;
+  }
+}

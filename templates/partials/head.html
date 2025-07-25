@@ -1,0 +1,48 @@
+<head>
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/16x16.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon/48x48.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/192x192.png">
+	<link rel="icon" type="image/png" sizes="167x167" href="/assets/images/favicon/167x167.png">
+	<link rel="icon" type="image/png" sizes="180x180" href="/assets/images/favicon/180x180.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	{%- set stylesheets = ["/base.css", "/syntax.css"] -%}
+
+	{%- if not page.extra.hide_header -%}
+		{%- set stylesheets = stylesheets | concat(with="/header.css") -%}
+	{%- endif -%}
+
+	{%- if not page.extra.hide_footer -%}
+		{%- set stylesheets = stylesheets | concat(with="/footer.css") -%}
+	{%- endif -%}
+
+	{%- for asset in page.assets -%}
+		{%- if asset is ending_with(".css") -%}
+			{%- set_global stylesheets = stylesheets | concat(with=asset) -%}
+		{%- endif -%}
+	{%- endfor -%}
+
+	{%- for stylesheet in page.extra.stylesheets | default(value=[]) -%}
+		{%- set_global stylesheets = stylesheets | concat(with=stylesheet) -%}
+	{%- endfor -%}
+
+	{%- for stylesheet in stylesheets -%}
+		<link rel="stylesheet" type="text/css" href="{{ stylesheet | safe }}">
+	{%- endfor -%}
+
+	{%- set scripts = [] -%}
+	
+	{%- for asset in page.assets -%}
+		{%- if asset is ending_with(".js") -%}
+			{%- set_global scripts = scripts | concat(with=asset) -%}
+		{%- endif -%}
+	{%- endfor -%}
+
+	{%- for script in scripts -%}
+		<script src="{{ script | safe }}"></script>
+	{%- endfor -%}
+	
+	<title>{{ page.title }}</title>
+</head>
