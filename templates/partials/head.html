@@ -27,7 +27,7 @@
 	{%- endfor -%}
 
 	{%- set scripts = [] -%}
-	
+
 	{%- for asset in page.assets -%}
 		{%- if asset is ending_with(".js") -%}
 			{%- set_global scripts = scripts | concat(with=asset) -%}
@@ -37,6 +37,6 @@
 	{%- for script in scripts -%}
 		<script src="{{ script | safe }}"></script>
 	{%- endfor -%}
-	
+
 	<title>{{ page.title }}</title>
 </head>

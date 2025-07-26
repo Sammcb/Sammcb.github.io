@@ -28,7 +28,7 @@ function randomFloat() {
 	const a = 1664525
 	const c = 1
 	seed = (a * seed + c) % m
-	return seed / m 
+	return seed / m
 }
 ```
 

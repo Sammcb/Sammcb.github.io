@@ -7,18 +7,18 @@ stylesheets = ["/readable.css", "/art.css"]
 
 - **Solar System**
 
-  - [![Solar system](solarsystem.png)](solarsystem.png)
+	- [![Solar system](solarsystem.png)](solarsystem.png)
 
-  - _2020_
+	- _2020_
 
 - **Crisp October Walk**
 
-  - [![Crisp october walk](crispoctoberwalk.png)](crispoctoberwalk.png)
+	- [![Crisp october walk](crispoctoberwalk.png)](crispoctoberwalk.png)
 
-  - _2020_
+	- _2020_
 
 - **Halloween**
 
-  - [![Halloween](halloween.png)](halloween.png)
+	- [![Halloween](halloween.png)](halloween.png)
 
-  - _2021_
+	- _2021_

@@ -12,7 +12,7 @@ external_links_no_referrer = true
 
 [link_checker]
 skip_prefixes = [
-  "http://[2001:db8::]/",
-  # Returns 403 when link checked, but reachable when clicked
-  "https://love2d.org"
+	"http://[2001:db8::]/",
+	# Returns 403 when link checked, but reachable when clicked
+	"https://love2d.org"
 ]

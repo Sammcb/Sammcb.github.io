@@ -1,12 +1,12 @@
 @use 'variables';
 
 nav {
-  display: flex;
-  justify-content: center;
-  background: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	background: var(--primary-color);
 
-  a {
-    color: white;
-    margin: 15px;
-  }
+	a {
+		color: white;
+		margin: 15px;
+	}
 }
