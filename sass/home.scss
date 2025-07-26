@@ -1,0 +1,13 @@
+#content {
+	p:has(img) {
+		display: flex;
+		justify-content: center;
+	}
+
+	img {
+		border-radius: 50%;
+		overflow: hidden;
+		max-width: 250px;
+		margin: 0 auto;
+	}
+}

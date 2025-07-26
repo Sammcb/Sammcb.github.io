@@ -1,0 +1,12 @@
+{%- extends "base.html" -%}
+
+{%- block variable_definitions -%}
+	{%- set page = load_data(literal='{"assets": [], "title": "404", "extra": {"hide_header": true, "hide_footer": true}}', format="json") -%}
+{%- endblock variable_definitions -%}
+
+{%- block title -%}
+{%- endblock title -%}
+
+{%- block content -%}
+<h1>404 Page not found</h1>
+{%- endblock content -%}

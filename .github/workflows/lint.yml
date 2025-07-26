@@ -1,0 +1,61 @@
+name: Lint
+on: workflow_call
+permissions: {}
+jobs:
+  flake:
+    runs-on: ubuntu-24.04-arm
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        persist-credentials: false
+    - uses: ./.github/actions/setup-nix
+    - uses: DeterminateSystems/flake-checker-action@f6b84c9884c22039e1fc23dadb4a0d0add56c197 # v11
+      with:
+        send-statistics: false
+        ignore-missing-flake-lock: false
+        fail-mode: true
+  checks:
+    runs-on: ubuntu-24.04-arm
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        persist-credentials: false
+    - uses: ./.github/actions/setup-nix
+    - name: Flake checks
+      run: nix flake check --all-systems
+  editorconfig:
+    runs-on: ubuntu-24.04-arm
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        persist-credentials: false
+    - uses: ./.github/actions/setup-nix
+    - name: Lint editorconfig
+      run: nix develop .#lintEditorconfig -c editorconfig-checker -f github-actions
+  workflows:
+    runs-on: ubuntu-24.04-arm
+    permissions:
+      security-events: write
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        persist-credentials: false
+    - uses: ./.github/actions/setup-nix
+    - name: Lint workflows
+      run: nix develop .#lintWorkflows -c zizmor --format sarif . > workflow_results.sarif
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Upload workflow report
+      uses: github/codeql-action/upload-sarif@181d5eefc20863364f96762470ba6f862bdef56b # v3.29.2
+      with:
+        sarif_file: workflow_results.sarif
+        category: zizmor
+  site:
+    runs-on: ubuntu-24.04-arm
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        persist-credentials: false
+    - uses: ./.github/actions/setup-nix
+    - name: Check site
+      run: nix develop .#build -c zola check

@@ -1,0 +1,24 @@
+{%- block variable_definitions -%}
+	{%- if page is undefined -%}
+		{%- set page = section -%}
+	{%- endif -%}
+{%- endblock variable_definitions -%}
+<!DOCTYPE html>
+<html lang="en">
+	{%- include "partials/head.html" -%}
+	<body>
+		{%- if not page.extra.hide_header -%}
+			{%- include "partials/header.html" -%}
+		{%- endif -%}
+		<div id="content">
+			{%- block title -%}
+			<h1>{{ page.title }}</h1>
+			{%- endblock title -%}
+			{%- block content -%}
+			{%- endblock content -%}
+		</div>
+		{%- if not page.extra.hide_footer -%}
+			{%- include "partials/footer.html" -%}
+		{%- endif -%}
+	</body>
+</html>

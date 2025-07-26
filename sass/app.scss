@@ -1,0 +1,10 @@
+#content{
+	p:has(img) {
+		display: flex;
+		justify-content: center;
+	}
+
+	:not(picture) > img {
+		max-width: 70%;
+	}
+}

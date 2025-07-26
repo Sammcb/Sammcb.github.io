@@ -1,0 +1,49 @@
+@use 'variables';
+
+:root {
+	color-scheme: light dark;
+	--primary-color: #{variables.$primary-color};
+	--highlight-color: #{variables.$highlight-color};
+
+	@media (prefers-color-scheme: dark) {
+		--primary-color: #{variables.$primary-color};
+		--highlight-color: #{variables.$highlight-color};
+	}
+}
+
+html {
+	height: 100%;
+	font-family: ui-rounded, system-ui, sans-serif;
+	font-variant-emoji: emoji;
+}
+
+body {
+	margin: 0;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+p {
+	line-height: 150%;
+}
+
+a {
+	transition: color 0.2s;
+	text-decoration: none;
+	color: var(--primary-color);
+
+	@media(hover: hover) {
+		&:hover {
+			color: var(--highlight-color);
+		}
+	}
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	margin: 0 auto;
+	max-width: calc(100% - variables.$page-padding-horizontal * 2);
+}
