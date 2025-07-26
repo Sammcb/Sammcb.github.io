@@ -1,10 +1,11 @@
 #content{
+	width: 1000px;
 	ul {
 		display: flex;
 		flex-wrap: wrap;
 		list-style-type: none;
 		padding: 0;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	li {
