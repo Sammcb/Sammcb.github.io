@@ -4,12 +4,12 @@
 	inputs = {
 		# Commit does not correspond to a tag.
 		# Updating to latest commit generally follows unstable branch.
-		nixpkgs.url = "github:NixOS/nixpkgs/0feafdbc84139a414f5d46a11cf91fc4fcd85ffb";
+		nixpkgs.url = "github:NixOS/nixpkgs/24bd6414d8888a861010135c5cb7b576f440d7cd";
 		# Commit does not correspond to a tag.
-		flake-parts.url = "github:hercules-ci/flake-parts/9305fe4e5c2a6fcf5ba6a3ff155720fbe4076569";
+		flake-parts.url = "github:hercules-ci/flake-parts/77826244401ea9de6e3bac47c2db46005e1f30b5";
 		flake-checker = {
-			# Commit corresponds to tag v0.2.7.
-			url = "github:DeterminateSystems/flake-checker/fc0d03efe300c1e923158831fd6d0a84d3ef75d3";
+			# Commit corresponds to tag v0.2.8.
+			url = "github:DeterminateSystems/flake-checker/3ecd9ddd3cf1ce0f78447cb0e5b7d8ecb91ee778";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
@@ -21,7 +21,11 @@
 				flakeCheckerPackage = flake-checker.packages.${system}.default;
 			in {
 				devShells.default = pkgs.mkShellNoCC {
-					nativeBuildInputs = [flakeCheckerPackage] ++ (with pkgs; [zola editorconfig-checker zizmor trufflehog]);
+					nativeBuildInputs = [flakeCheckerPackage] ++ (with pkgs; [gnumake zola editorconfig-checker zizmor trufflehog]);
+				};
+
+				devShells.build = pkgs.mkShellNoCC {
+					nativeBuildInputs = with pkgs; [zola];
 				};
 
 				devShells.lintWorkflows = pkgs.mkShellNoCC {

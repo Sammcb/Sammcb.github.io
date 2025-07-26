@@ -1,8 +1,10 @@
-p:has(img) {
-	display: flex;
-	justify-content: center;
-}
+#content {
+	p:has(img) {
+		display: flex;
+		justify-content: center;
+	}
 
-img {
-	max-width: 70%;
+	img {
+		max-width: 70%;
+	}
 }

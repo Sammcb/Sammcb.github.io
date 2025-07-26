@@ -4,7 +4,7 @@ title = "Blog"
 [extra]
 stylesheets = ["/readable.css"]
 +++
-## MountainScape
+## MountainScape • 2022
 
 0. [Steep Learning Slope](@/blog/mountainscape-steep-learning-slope/index.md)
 
@@ -12,7 +12,7 @@ stylesheets = ["/readable.css"]
 
 2. [Look at that View!](@/blog/mountainscape-look-at-that-view/index.md)
 
-## Anniversary
+## Anniversary • 2021
 
 0. [Learning to LÖVE](@/blog/anniversary-learning-to-love/index.md)
 

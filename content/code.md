@@ -58,7 +58,7 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ### UVA Climate Stories • 2022
 
-[Website](https://github.com/UVAClimateStories/uvaclimatestories.github.com) I created and maintained for my girlfriend's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership.
+[Website](https://github.com/Sammcb/UVAClimateStoriesSite) I created and maintained for my girlfriend's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership.
 
 ### Personal Website • 2019-2022
 
