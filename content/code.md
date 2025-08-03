@@ -8,15 +8,9 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Games
 
-### [Gradient Games • 2022](/gradientgames)
+### [Gradient Games • 2022-2025](@/gradientgames/_index.md)
 
-[Gradient Games](https://github.com/Sammcb/GradientGames) is a simple board game app built using SpriteKit and SwiftUI for iOS, iPadOS, and tvOS. Includes the ability to play local games on the same device, plus creating and sharing themes. You can also create and share themes on the web using the theme designers:
-
-- [Chess](/ChessColors)
-
-- [Reversi](/ReversiColors)
-
-- [Checkers](/CheckersColors)
+[Gradient Games](https://github.com/Sammcb/GradientGames) is a simple board game app built using SwiftUI and SwiftData for iOS, iPadOS, macOS, tvOS. Includes the ability to play local games on the same device, plus creating and sharing themes.
 
 ### Anniversary • 2021
 
@@ -26,7 +20,7 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 [Centauri](https://github.com/Sammcb/Centauri) is a short text-based adventure game inspired by The Martian and Three Body Problem.
 
-### [Fally Bally • 2014-2021](/fallybally)
+### [Fally Bally • 2014-2021](@/fallybally/index.md)
 
 [Fally Bally](https://github.com/Sammcb/FallyBally) is a simple, minimalist arcade game written in Swift using SpriteKit for iOS and iPadOS. I originially co-developed it back in 2014. It was written in Objective-C and relied on Apple's iAd system for generating revenue. In 2021, I completely redesigned and rewrote the app from the ground up and released it as a new app under the same name.
 
@@ -58,8 +52,8 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ### UVA Climate Stories • 2022
 
-[Website](https://github.com/Sammcb/UVAClimateStoriesSite) I created and maintained for my girlfriend's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership.
+[Website](https://github.com/Sammcb/UVAClimateStoriesSite) I created and maintained for my partner's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership.
 
-### Personal Website • 2019-2022
+### Personal Website • 2019-2025
 
-[This website](https://github.com/Sammcb/Sammcb.github.io). Built using Jekyll and hosted on GitHub Pages. Provides a place to keep track of projects and practice web-based development.
+[This website](https://github.com/Sammcb/Sammcb.github.io). Built using Zola and hosted on GitHub Pages. Provides a place to keep track of projects and post occasional devlogs.

@@ -7,4 +7,22 @@
 	:not(picture) > img {
 		max-width: 70%;
 	}
+
+	p:has(a[download]) {
+		display: flex;
+		justify-content: center;
+	}
+
+	a[download] {
+		color: white;
+		background-color: var(--primary-color);
+		border-radius: 5px;
+		padding: 10px;
+
+		@media(hover: hover) {
+			&:hover {
+				color: var(--highlight-color);
+			}
+		}
+	}
 }
