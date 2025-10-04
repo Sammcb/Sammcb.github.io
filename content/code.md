@@ -10,7 +10,7 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ### [Gradient Games • 2022-2025](@/gradientgames/_index.md)
 
-[Gradient Games](https://github.com/Sammcb/GradientGames) is a simple board game app built using SwiftUI and SwiftData for iOS, iPadOS, macOS, tvOS. Includes the ability to play local games on the same device, plus creating and sharing themes.
+[Gradient Games](https://github.com/Sammcb/GradientGames) is a simple board game app built using SwiftUI and SwiftData for iOS, iPadOS, macOS, and tvOS. Includes the ability to play local games on the same device, plus creating and sharing themes.
 
 ### Anniversary • 2021
 
@@ -40,20 +40,16 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Tools
 
-### MakeAppIcons • 2021
-
-[MakeAppIcons](https://github.com/Sammcb/MakeAppIcons) is a simple Swift command line tool to automatically generate correctly sized images from a source image for the AppIcon XCAsset appiconset in Xcode.
-
 ### [ColorsFinder • 2020](/ColorsFinder)
 
 [ColorsFinder](https://github.com/Sammcb/ColorsFinder) is a web tool that helps find evenly spaced color gradients with arbitrary interval values.
 
 ## Websites
 
-### UVA Climate Stories • 2022
-
-[Website](https://github.com/Sammcb/UVAClimateStoriesSite) I created and maintained for my partner's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership.
-
 ### Personal Website • 2019-2025
 
 [This website](https://github.com/Sammcb/Sammcb.github.io). Built using Zola and hosted on GitHub Pages. Provides a place to keep track of projects and post occasional devlogs.
+
+### UVA Climate Stories • 2022
+
+[Website](https://github.com/Sammcb/UVAClimateStoriesSite) I created and maintained for my partner's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership.
