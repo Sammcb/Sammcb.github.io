@@ -14,7 +14,7 @@ After more than six years, Fally Bally is back and looking better than ever!
 
 [{{ light_dark_picture(light="/app-store-light.svg", dark="/app-store-dark.svg") }}](https://apps.apple.com/us/app/fally-bally/id1549562790)
 
-For information on how to file a bug report or feature request, check out the Fally Bally [discussions](https://github.com/Sammcb/FallyBally/discussions/1).
+To file a bug report or feature request, create a Fally Bally [issue](https://github.com/Sammcb/FallyBally/issues).
 
 ## [Privacy Policy 🔗](#privacy){#privacy}
 
