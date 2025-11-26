@@ -16,7 +16,7 @@ I had to consider the benefits of using a familiar engine that I knew would take
 
 When working on coding projects, I like to create Docker containers to help manage different system install requirements, enhance the portability of my code, and reduce system debugging issues. Unfortunately, I have not yet figured out how to connect a Docker container application to my host computer's graphical display (definitely something I want to explore in the future). For this reason, I decided not to make a container for this project.
 
-Another part of my workflow is to create a `do.sh` script containing a bunch of important commands and build flows so I don't have to remember or look up common actions. I based it off of a [template script](https://gist.github.com/Sammcb/91fa6292c75c49925516fbde29b57d11) I uploaded to GitHub Gist.
+Another part of my workflow is to create a `do.sh` script containing a bunch of important commands and build flows so I don't have to remember or look up common actions.
 
 ## Hello, World
 
