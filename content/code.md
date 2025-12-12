@@ -49,7 +49,3 @@ This is a collection of some of my favorite coding projects. Check out all of my
 ### Personal Website • 2019-2025
 
 [This website](https://github.com/Sammcb/Sammcb.github.io). Built using Zola and hosted on GitHub Pages. Provides a place to keep track of projects and post occasional devlogs.
-
-### UVA Climate Stories • 2022
-
-[Website](https://github.com/Sammcb/UVAClimateStoriesSite) I created and maintained for my partner's independent study project in college. She interviewed a group of students to collect their views on how climate change impacted them, and any appeals they had for UVA leadership.
