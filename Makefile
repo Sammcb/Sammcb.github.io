@@ -1,5 +1,5 @@
 .PHONY: build clean serve lint
-.DEFAULT_GOAL: build
+.DEFAULT_GOAL := build
 
 build: clean
 	zola build
