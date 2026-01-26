@@ -1,0 +1,12 @@
+{%- extends "base.html" -%}
+
+{%- block variable_definitions -%}
+	{%- set page = load_data(literal='{"assets": [], "title": ""}', format="json") -%}
+{%- endblock variable_definitions -%}
+
+{%- block title -%}
+{%- endblock title -%}
+
+{%- block content -%}
+single!
+{%- endblock content -%}

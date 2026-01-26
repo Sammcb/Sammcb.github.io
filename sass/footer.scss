@@ -5,14 +5,14 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px variables.$page-padding-horizontal;
-	border-top: 1px solid text;
+	border-top: 1px solid canvastext;
 
 	@media(max-width: variables.$max-mobile-width) {
 		flex-direction: column-reverse;
 	}
 
 	svg {
-		fill: text;
+		fill: canvastext;
 
 		@media(hover: hover) {
 			&:hover {

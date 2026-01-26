@@ -1,4 +1,36 @@
 {%- extends "base.html" -%}
 {%- block content -%}
+
+{%- if page.date -%}
+<p>Published: {{ page.date }}</p>
+{%- endif -%}
+
+{%- if page.updated -%}
+<p>Last edited: {{ page.updated }}</p>
+{%- endif -%}
+
+{%- if page.taxonomies -%}
+	<ul class="taxonomies">
+	{%- set_global taxonomy_names = [] -%}
+	{%- for taxonomy_name, terms in page.taxonomies -%}
+		{%- if terms -%}
+			{%- set_global taxonomy_names = taxonomy_names | concat(with=taxonomy_name) -%}
+		{%- endif -%}
+	{%- endfor -%}
+	{%- for taxonomy_name in taxonomy_names | sort -%}
+		{%- set taxonomy = get_taxonomy(kind=taxonomy_name) -%}
+		<li>
+			<a href="{{ taxonomy.permalink }}">{{ taxonomy_name }}</a>
+		</li>
+		{%- set term_names = page.taxonomies[taxonomy_name] | sort -%}
+		{%- for term_name in term_names -%}
+			<li>
+				<a href="{{ get_taxonomy_url(kind=taxonomy_name, name=term_name) }}">{{ taxonomy_name }}:{{ term_name }}</a>
+			</li>
+		{%- endfor -%}
+	{%- endfor -%}
+	</ul>
+{%- endif -%}
+
 {{ page.content | safe }}
 {%- endblock content -%}

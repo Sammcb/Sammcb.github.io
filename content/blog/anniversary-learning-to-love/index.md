@@ -1,5 +1,11 @@
 +++
 title = "Learning to LÖVE"
+date = 2021-01-01
+updated = 2021-02-01
+
+[taxonomies]
+projects = ["Anniversary"]
+languages = ["lua"]
 
 [extra]
 stylesheets = ["/readable.css", "/blog.css"]
@@ -97,7 +103,7 @@ I decided to wrap up progress for the day by designing a simple tileset and hope
 
 ![Tileset](terrain.png)
 
-I wrote out a `world_factory` module to generate the `world` object and began figuring out how to divide my spritesheet into individual tile images in LÖVE. I figured out the tool I needed were `Quads`. I was then able to draw the selected portion of the spritesheet to the screen using a `draw()` call.
+I wrote out a `world_factory` module to generate the `world` object and began figuring out how to divide my spritesheet into individual tile images in LÖVE. I figured out the tool I needed was `Quad`. I was then able to draw the selected portion of the spritesheet to the screen using a `draw()` call.
 
 ```lua
 -- world.lua
