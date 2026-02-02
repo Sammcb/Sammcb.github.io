@@ -18,7 +18,7 @@ Besides coding, I enjoy walking, hiking, casually playing most sports, and being
 
 I do not use any AI or LLMs for my hobby coding projects, art, or writing.
 
-🌎 I believe the world is a better place when we treat animals, the planet, and each other with respect. Everyone should have the right to clean air and water, healthy food, housing, privacy, safety, love, and identity expression. ❤️
+🌎 I believe the world is a better place when we treat animals, the planet, and each other with respect. Everyone should have the right to clean air and water, healthy food, housing, heathcare, bodily autonomy, privacy, safety, love, and identity expression. ❤️
 
 ## Contact
 
