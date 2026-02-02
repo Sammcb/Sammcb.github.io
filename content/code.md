@@ -26,11 +26,11 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Generative Art
 
-### [MountainScape • 2020-2022](/MountainScape)
+### [MountainScape • 2020-2022](https://sammcb.com/MountainScape)
 
 [MountainScape](https://github.com/Sammcb/MountainScape) is a program to generate a mountain scape using fractal noise composed from Perlin noise octaves. Built using JavaScript and the HTML canvas.
 
-### [SnowEffect • 2020](/SnowEffect)
+### [SnowEffect • 2020](https://sammcb.com/SnowEffect)
 
 [SnowEffect](https://github.com/Sammcb/SnowEffect) is a simple JavaScript function to generate a gentle snow effect over a webpage.
 
@@ -40,7 +40,7 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Tools
 
-### [ColorsFinder • 2020](/ColorsFinder)
+### [ColorsFinder • 2020](https://sammcb.com/ColorsFinder)
 
 [ColorsFinder](https://github.com/Sammcb/ColorsFinder) is a web tool that helps find evenly spaced color gradients with arbitrary interval values.
 
