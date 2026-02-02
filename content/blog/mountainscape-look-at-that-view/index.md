@@ -31,4 +31,4 @@ After adding this, I spent a little time tweaking generation parameters and colo
 
 {{ resize_image(file="mountainscape.png", size=700, alt="Final mountain scape") }}
 
-Feel free to check out the [code](https://github.com/Sammcb/MountainScape) or play around with the [generator](/MountainScape) and find your favorite mountain scape!
+Feel free to check out the [code](https://github.com/Sammcb/MountainScape) or play around with the [generator](https://sammcb.com/MountainScape) and find your favorite mountain scape!

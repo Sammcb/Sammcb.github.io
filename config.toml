@@ -1,4 +1,7 @@
 base_url = "https://sammcb.com"
+title = "Sam McBroom"
+description = "Projects, devlogs, art, and thoughts"
+
 compile_sass = true
 minify_html = true
 
