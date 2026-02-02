@@ -2,16 +2,20 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="/">Home</a>
+				{%- set home_url = get_url(path="@/_index.md") -%}
+				<a href="{{ home_url }}">Home</a>
 			</li>
 			<li>
-				<a href="/code">Code</a>
+				{%- set code_url = get_url(path="@/code.md") -%}
+				<a href="{{ code_url }}">Code</a>
 			</li>
 			<li>
-				<a href="/blog">Blog</a>
+				{%- set blog_url = get_url(path="@/blog/_index.md") -%}
+				<a href="{{ blog_url }}">Blog</a>
 			</li>
 			<li>
-				<a href="/art">Art</a>
+				{%- set art_url = get_url(path="@/art/index.md") -%}
+				<a href="{{ art_url }}">Art</a>
 			</li>
 		</ul>
 	</nav>
