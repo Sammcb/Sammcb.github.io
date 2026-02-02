@@ -6,8 +6,7 @@ compile_sass = true
 minify_html = true
 
 generate_feeds = true
-feed_filenames = ["rss.xml"]
-author = "contact@sammcb.com (Samuel McBroom)"
+author = "Sam McBroom"
 
 taxonomy_root = "blog"
 taxonomies = [
