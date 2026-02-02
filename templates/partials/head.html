@@ -8,6 +8,8 @@
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 	<link rel="stylesheet" type="text/css" href="/giallo-dark.css" media="(prefers-color-scheme: dark)">
 	<link rel="stylesheet" type="text/css" href="/giallo-light.css" media="(prefers-color-scheme: light)">
+	{%- set atom_url = get_url(path="atom.xml") -%}
+	<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ atom_url }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 
