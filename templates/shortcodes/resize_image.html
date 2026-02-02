@@ -1,0 +1,17 @@
+{%- set base_path = page.path | default(value=section.path) -%}
+{%- set path = base_path ~ file -%}
+{%- set op = op | default(value="fit") -%}
+{%- set width = width | default(value=size) -%}
+{%- set height = height | default(value=size) -%}
+{%- set format = format | default(value="webp") -%}
+{%- set image = resize_image(path=path, width=width, height=height, op=op, format=format) -%}
+{%- set link = link | default(value=true) -%}
+<p>
+	{%- if link -%}
+	<a class="resize-image-source" href="{{ path }}">
+	{%- endif -%}
+	<img alt="{{ alt }}" decoding="async" loading="lazy" src="{{ image.url }}">
+	{%- if link -%}
+	</a>
+	{%- endif -%}
+</p>

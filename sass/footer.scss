@@ -1,33 +1,15 @@
-@use 'variables';
-
 footer {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px variables.$page-padding-horizontal;
-	border-top: 1px solid text;
+	flex-direction: column;
+	margin: 0 var(--page-padding-horizontal);
 
-	@media(max-width: variables.$max-mobile-width) {
-		flex-direction: column-reverse;
-	}
-
-	svg {
-		fill: text;
-
-		@media(hover: hover) {
-			&:hover {
-				fill: gray;
-			}
-		}
-	}
-
-	a {
+	#respect {
 		display: flex;
-		flex-shrink: 1;
-	}
-
-	p {
-		font-size: 12px;
-		text-align: center;
+		width: 100%;
+		height: calc(var(--border-width) * 2);
+		background: linear-gradient(to right in oklab, #fdd817, #ffffff, #f4aec8, #7bcce5, #945516, #000000, #e22016, #f28917, #efe524, #78b82a, #2c58a4, #6d2380);
+		border-radius: 50px;
+		box-shadow: 0 0 5px var(--neutral-color);
+		margin: 20px 0 0 0;
 	}
 }

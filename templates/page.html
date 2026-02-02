@@ -1,4 +1,49 @@
 {%- extends "base.html" -%}
 {%- block content -%}
+
+{%- if page.description or page.date or page.taxonomies -%}
+<div class="metadata">
+
+	{%- if page.description -%}
+	<p class="description">{{ page.description }}</p>
+	{%- endif -%}
+
+	{%- if page.date -%}
+	<div class="dates">
+		<p>Published: {{ page.date | date(format="%B %-d, %Y") }}</p>
+		{%- if page.updated -%}
+		<p>Updated: {{ page.updated | date(format="%B %-d, %Y") }}</p>
+		{%- endif -%}
+	</div>
+	{%- endif -%}
+
+	{%- if page.taxonomies -%}
+		<ul class="taxonomies">
+		{%- set_global taxonomy_names = [] -%}
+		{%- for taxonomy_name, terms in page.taxonomies -%}
+			{%- if terms -%}
+				{%- set_global taxonomy_names = taxonomy_names | concat(with=taxonomy_name) -%}
+			{%- endif -%}
+		{%- endfor -%}
+		{%- for taxonomy_name in taxonomy_names | sort -%}
+			{%- set taxonomy = get_taxonomy(kind=taxonomy_name) -%}
+			<li>
+				<a href="{{ taxonomy.permalink }}">{{ taxonomy_name }}</a>
+				<p>:&nbsp;</p>
+			{%- set term_names = page.taxonomies[taxonomy_name] | sort -%}
+			{%- for term_name in term_names -%}
+				<a href="{{ get_taxonomy_url(kind=taxonomy_name, name=term_name) }}">{{ term_name }}</a>
+				{%- if not loop.last -%}
+				<p>,&nbsp;</p>
+				{%- endif -%}
+			{%- endfor -%}
+			</li>
+		{%- endfor -%}
+		</ul>
+	{%- endif -%}
+
+</div>
+{%- endif -%}
+
 {{ page.content | safe }}
 {%- endblock content -%}

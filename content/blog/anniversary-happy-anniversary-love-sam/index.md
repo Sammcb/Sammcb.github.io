@@ -1,5 +1,12 @@
 +++
 title = "Happy Anniversary, LÖVE Sam"
+description = "Anniversary part 2."
+date = 2021-03-25
+updated = 2021-03-25
+
+[taxonomies]
+projects = ["anniversary"]
+languages = ["lua"]
 
 [extra]
 stylesheets = ["/readable.css", "/blog.css"]
@@ -52,22 +59,22 @@ For some reason, the looping appeared to have no effect. I looked around but cou
 
 ## Final Touches
 
-With the gameplay mechanics, ending cutscene, and music done, I was almost done with the project. I felt the plain green background color needed improving, and I wanted to replace it with randomly generated grass tiles. Luckily, this was pretty easy to accomplish. I just copied the random grass terrain generation logic from my `world` object and set the program to fill an area slightly larger than the player's viewpoint with the randomly generated grass. I also tweaked the grass generation so plain grass tiles were chosen more frequently than flowering grass tiles.
+With the gameplay mechanics, ending cutscene, and music done, I was almost done with the project. I felt the plain green background color needed improving, and I wanted to replace it with randomly generated grass tiles. Luckily, this was pretty easy to accomplish. I just copied the random grass terrain generation logic from my `world` object and set the program to fill an area slightly larger than the player's viewport with the randomly generated grass. I also tweaked the grass generation so plain grass tiles were chosen more frequently than flowering grass tiles.
 
-I had a little extra time before I wanted to present the game to my girlfriend, so I decided to quickly extend my tile system and create some animated water tiles. I followed the same process for implementing a new tile type, but every second I had the `draw()` function switch which water tile was rendered in the water pools.
+I had a little extra time before I wanted to present the game to my partner, so I decided to quickly extend my tile system and create some animated water tiles. I followed the same process for implementing a new tile type, but every second I had the `draw()` function switch which water tile was rendered in the water pools.
 
 I also chose an retro, arcade-style font, but chose not to include that in the version on GitHub since I'm not quite sure about the licensing (one day I would love to learn enough to make my own font).
 
-Finally, I wrapped up the project by designing a few more grass and wall tile variations. I was very happy with the final product and was excited to present it to my girlfriend!
+Finally, I wrapped up the project by designing a few more grass and wall tile variations. I was very happy with the final product and was excited to present it to my partner!
 
-![Final game cutscene](anniversary.png)
+{{ resize_image(file="anniversary.png", size=700, alt="Final game cutscene") }}
 
 Apart from thinking she was walking through a small intestine, being confused by the heart-blob character, and generally not being a fan of pixel art graphics, she loved it!
 
 ## Closing Thoughts
 
-Overall, I really like working with LÖVE. I was impressed with how quickly I was able to create a working (albeit very simple) game. While I really enjoyed using it for this project, Lua's lack of objects makes me unsure if the engine would work well with larger-scale games. Additionally, the lack of sprite z-positioning adds extra complexity to the draw function, and the absence of a built in camera object surprised me.
+Overall, I really liked working with LÖVE. I was impressed with how quickly I was able to create a working (albeit very simple) game. While I really enjoyed using it for this project, Lua's lack of objects makes me unsure if the engine would work well with larger-scale games. Additionally, the lack of sprite z-positioning adds extra complexity to the draw function, and the absence of a built in camera object surprised me.
 
 That being said, the engine was definitely easier to learn compared to a more full-featured engine like Unity. There was a lot of convenient default functionality provided, such as being able to play looping music or load in and draw a sprite in just a few lines. I definitely hope to experiment more with LÖVE and felt it was an execellent engine choice for this project.
 
-I hope you enjoyed this devlog series. I definitely will write more in the future on projects to come! If you want to look more closely at the code or run/build off of Anniversary yourself, make sure to check out the [repository](https://github.com/Sammcb/Anniversary)!
+I hope you enjoyed this devlog series. I'll definitely write more in the future on projects to come! If you want to look more closely at the code or run/build off of Anniversary yourself, make sure to check out the [repository](https://github.com/Sammcb/Anniversary)!

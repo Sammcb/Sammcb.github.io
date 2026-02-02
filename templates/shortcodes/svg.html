@@ -1,0 +1,5 @@
+{%- set base_path = page.path | default(value=section.path) -%}
+{%- set file_path = base_path ~ file -%}
+<div class="svg-container">
+	{{ load_data(path=file_path) | safe }}
+</div>

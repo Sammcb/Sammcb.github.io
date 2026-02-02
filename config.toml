@@ -1,14 +1,28 @@
 base_url = "https://sammcb.com"
 compile_sass = true
+minify_html = true
+
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+author = "contact@sammcb.com (Samuel McBroom)"
+
+taxonomy_root = "blog"
+taxonomies = [
+	{name = "projects"},
+	{name = "languages"}
+]
 
 [markdown]
-highlight_code = true
-highlight_theme = "css"
-error_on_missing_highlight = true
 lazy_async_image = true
 external_links_target_blank = true
 external_links_no_follow = true
 external_links_no_referrer = true
+
+[markdown.highlighting]
+error_on_missing_language = true
+style = "class"
+light_theme = "catppuccin-latte"
+dark_theme = "catppuccin-mocha"
 
 [link_checker]
 skip_prefixes = [
