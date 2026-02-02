@@ -11,6 +11,8 @@
 	{%- set atom_url = get_url(path="atom.xml") -%}
 	<link rel="alternate" type="application/atom+xml" title="RSS" href="{{ atom_url }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="referrer" content="no-referrer">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; form-action 'none'">
 	<meta charset="utf-8">
 
 	{%- set stylesheets = ["/base.css", "/syntax.css"] -%}
