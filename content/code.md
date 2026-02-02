@@ -4,23 +4,23 @@ title = "Code"
 [extra]
 stylesheets = ["/readable.css"]
 +++
-This is a collection of some of my favorite coding projects. Check out all of my projects on GitHub.
+This is a collection of some of my favorite coding projects. Check out all of my projects on [GitHub](https://github.com/Sammcb).
 
 ## Games
 
-### [Gradient Games • 2022-2025](@/gradientgames/_index.md)
+### [Gradient Games • 2022-2026](@/gradientgames/_index.md)
 
 [Gradient Games](https://github.com/Sammcb/GradientGames) is a simple board game app built using SwiftUI and SwiftData for iOS, iPadOS, macOS, and tvOS. Includes the ability to play local games on the same device, plus creating and sharing themes.
 
 ### Anniversary • 2021
 
-[Anniversary](https://github.com/Sammcb/Anniversary) is a small game I made using the LÖVE engine for my girlfriend to celebrate our anniversary. I made all the graphics in Aesprite and music using BeepBox.
+[Anniversary](https://github.com/Sammcb/Anniversary) is a small game I made using the LÖVE engine for my partner to celebrate our anniversary. I made all the graphics in Aesprite and music using BeepBox.
 
 ### Centauri • 2020
 
 [Centauri](https://github.com/Sammcb/Centauri) is a short text-based adventure game inspired by The Martian and Three Body Problem.
 
-### [Fally Bally • 2014-2021](@/fallybally/index.md)
+### [Fally Bally • 2014-2026](@/fallybally/index.md)
 
 [Fally Bally](https://github.com/Sammcb/FallyBally) is a simple, minimalist arcade game written in Swift using SpriteKit for iOS and iPadOS. I originially co-developed it back in 2014. It was written in Objective-C and relied on Apple's iAd system for generating revenue. In 2021, I completely redesigned and rewrote the app from the ground up and released it as a new app under the same name.
 
@@ -46,6 +46,6 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Websites
 
-### Personal Website • 2019-2025
+### Personal Website • 2019-2026
 
 [This website](https://github.com/Sammcb/Sammcb.github.io). Built using Zola and hosted on GitHub Pages. Provides a place to keep track of projects and post occasional devlogs.

@@ -7,6 +7,25 @@
 	img {
 		max-width: 70%;
 	}
+
+	a:has(> img) {
+		max-width: 70%;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.dates {
+	display: flex;
+	margin: 15px 0;
+
+	p {
+		margin: 0 15px 0 0;
+		color: var(--neutral-color);
+		font-style: italic;
+	}
 }
 
 .taxonomies {
@@ -14,17 +33,27 @@
 	flex-wrap: wrap;
 	list-style-type: none;
 	padding: 0;
-	margin: 0;
 
 	li {
 		display: flex;
+		margin: 0 15px 0 0;
+		padding: 2px 10px;
+		border: var(--border-width) solid var(--neutral-color);
+		border-radius: 50px;
 
-		a {
-			padding: 15px;
+		p {
+			margin: 0;
+			line-height: unset;
 		}
 	}
+}
 
-	/* li { */
-		/* margin: 15px; */
-	/* } */
+.description {
+	margin: 0;
+	line-height: unset;
+}
+
+.metadata {
+	border-left: var(--border-width) solid var(--neutral-color);
+	padding-left: 10px;
 }

@@ -1,4 +1,15 @@
 {%- extends "base.html" -%}
 {%- block content -%}
 {{ section.content | safe }}
+{%- if section.extra.listPages -%}
+	<ul>
+	{%- for page in section.pages | sort(attribute="date") | reverse -%}
+		<li>
+			<a href="{{ page.path }}">{{ page.title }}</a>
+			<br>
+			{{ page.date | date(format="%B %-d, %Y") }} - {{ page.description }}
+		</li>
+	{%- endfor -%}
+	</ul>
+{%- endif -%}
 {%- endblock content -%}

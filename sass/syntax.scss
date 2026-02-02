@@ -1,12 +1,14 @@
-@use 'variables';
-
 :root {
-	--syntax-color: #{variables.$latte-text};
-	--syntax-background-color: #{variables.$latte-base};
+	// Catppuccin latte text
+	--syntax-color: #4c4f69;
+	// Catppuccin latte base
+	--syntax-background-color: #eff1f5;
 
 	@media (prefers-color-scheme: dark) {
-		--syntax-color: #{variables.$mocha-text};
-		--syntax-background-color: #{variables.$mocha-base};
+		// Catppuccin mocha text
+		--syntax-color: #cdd6f4;
+		// Catppuccin mocha base
+		--syntax-background-color: #1e1e2e;
 	}
 }
 

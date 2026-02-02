@@ -1,12 +1,22 @@
 {%- extends "base.html" -%}
 
 {%- block variable_definitions -%}
-	{%- set page = load_data(literal='{"assets": [], "title": ""}', format="json") -%}
+	{%- set page = load_data(literal='{"assets": [], "title": "", "extra": {"stylesheets": ["/readable.css"]}}', format="json") -%}
 {%- endblock variable_definitions -%}
 
 {%- block title -%}
+{%- set taxonomy_data = get_taxonomy(kind=taxonomy.name) -%}
+<h1><a href="{{ taxonomy_data.permalink }}">{{ taxonomy.name }}</a>: {{ term.name }}</h1>
 {%- endblock title -%}
 
 {%- block content -%}
-single!
+<ul>
+{%- for page in term.pages | sort(attribute="date") | reverse -%}
+	<li>
+		<a href="{{ page.path }}">{{ page.title }}</a>
+		<br>
+		{{ page.date | date(format="%B %-d, %Y") }} - {{ page.description }}
+	</li>
+{%- endfor -%}
+</ul>
 {%- endblock content -%}

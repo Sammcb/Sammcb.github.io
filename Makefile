@@ -6,6 +6,8 @@ build: clean
 
 clean:
 	rm -rf public
+	rm -rf static/giallo*.css
+	rm -rf static/processed_images
 
 serve:
 	zola serve

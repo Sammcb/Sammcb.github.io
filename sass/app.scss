@@ -8,21 +8,22 @@
 		max-width: 70%;
 	}
 
+	a:has(> img) {
+		max-width: 70%;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
 	p:has(a[download]) {
 		display: flex;
 		justify-content: center;
 	}
 
 	a[download] {
-		color: white;
-		background-color: var(--primary-color);
-		border-radius: 5px;
+		border-radius: 50px;
+		border: var(--border-width) solid;
 		padding: 10px;
-
-		@media(hover: hover) {
-			&:hover {
-				color: var(--highlight-color);
-			}
-		}
 	}
 }

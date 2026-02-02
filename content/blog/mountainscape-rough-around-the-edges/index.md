@@ -1,5 +1,12 @@
 +++
 title = "Rough Around the Edges"
+description = "MountainScape part 1."
+date = 2022-05-02
+updated = 2022-05-02
+
+[taxonomies]
+projects = ["mountainscape"]
+languages = ["javascript"]
 
 [extra]
 stylesheets = ["/readable.css", "/blog.css"]
@@ -38,7 +45,7 @@ function scaleY(y, scale, shift) {
 }
 ```
 
-After getting the fractal noise working, I adjusted `scale` and `shift` values so they are both relative to the height of the canvas. I also adjusted the way the values were calculated to depend on easily understandable changes.
+After getting the fractal noise working, I adjusted the `scale` and `shift` values so they are both relative to the height of the canvas. I also adjusted the way the values were calculated to depend on easily understandable changes.
 
 ```javascript
 // mountains.js
@@ -54,12 +61,12 @@ This system will make it easy for me to adjust the verticality and position of t
 
 The result were actual mountain-y looking mountains 🏔️!
 
-![Layered perlin noise mountain](mountain.png)
+{{ resize_image(file="mountain.png", size=700, alt="Layered perlin noise mountain") }}
 
 ## Blooper Reel
 
 While working on this new algorithm, I accidentally implemented it improperly (by generating a larger gradients array once and using that for all octaves) and produced some very fractal-y looking mountains.
 
-![Fractal mountain](fractal.png)
+{{ resize_image(file="fractal.png", size=700, alt="Fractal mountain") }}
 
 Honestly though, I was really happy with how the fractal noise turned out and wanted to try move forward with making some artworks before adding in the erosion system (who knows, maybe it won't be necessary?).

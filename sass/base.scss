@@ -1,13 +1,12 @@
-@use 'variables';
-
 :root {
 	color-scheme: light dark;
-	--primary-color: #{variables.$primary-color};
-	--highlight-color: #{variables.$highlight-color};
+	--primary-color: royalblue;
+	--neutral-color: gray;
+	--page-padding-horizontal: 5%;
+	--border-width: 2px;
 
 	@media (prefers-color-scheme: dark) {
-		--primary-color: #{variables.$primary-color};
-		--highlight-color: #{variables.$highlight-color};
+		--primary-color: lightskyblue;
 	}
 }
 
@@ -29,14 +28,22 @@ p {
 }
 
 a {
-	transition: color 0.2s;
+	transition: color 0.2s, background 0.2s;
 	text-decoration: none;
 	color: var(--primary-color);
 
 	@media(hover: hover) {
 		&:hover {
-			color: var(--highlight-color);
+			color: color-mix(in oklab, var(--primary-color), transparent);
 		}
+	}
+}
+
+ul {
+	margin: 0;
+
+	li {
+		margin: 10px 0;
 	}
 }
 
@@ -45,5 +52,17 @@ a {
 	flex-direction: column;
 	flex-grow: 1;
 	margin: 0 auto;
-	max-width: calc(100% - variables.$page-padding-horizontal * 2);
+	max-width: calc(100% - var(--page-padding-horizontal) * 2);
+}
+
+.svg-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.resize-image-source {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

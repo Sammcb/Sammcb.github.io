@@ -1,12 +1,19 @@
 {%- extends "base.html" -%}
 
 {%- block variable_definitions -%}
-	{%- set page = load_data(literal='{"assets": [], "title": ""}', format="json") -%}
+	{%- set page = load_data(literal='{"assets": [], "title": "", "extra": {"stylesheets": ["/readable.css", "/blog.css"]}}', format="json") -%}
 {%- endblock variable_definitions -%}
 
 {%- block title -%}
+<h1>{{ taxonomy.name }}</h1>
 {%- endblock title -%}
 
 {%- block content -%}
-list!
+<ul class="taxonomies">
+{%- for term in terms -%}
+	<li>
+		<a href="{{ term.path }}">{{ term.name }}</a>
+	</li>
+{%- endfor -%}
+</ul>
 {%- endblock content -%}

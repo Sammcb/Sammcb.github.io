@@ -1,5 +1,12 @@
 +++
 title = "Look at that View!"
+description = "MountainScape part 2."
+date = 2022-05-03
+updated = 2022-05-03
+
+[taxonomies]
+projects = ["mountainscape"]
+languages = ["javascript"]
 
 [extra]
 stylesheets = ["/readable.css", "/blog.css"]
@@ -20,8 +27,8 @@ if (gradient) {
 }
 ```
 
-After adding adding this, I spent a little time tweaking generation parameters and color values and ended up with some pretty nice views 🏔️!
+After adding this, I spent a little time tweaking generation parameters and color values and ended up with some pretty nice views 🏔️!
 
-![Final mountain scape](mountainscape.png)
+{{ resize_image(file="mountainscape.png", size=700, alt="Final mountain scape") }}
 
-Feel free to check out the [code](https://github.com/Sammcb/MountainScape) and play around with the [generator](/MountainScape) and find your favorite mountain scape!
+Feel free to check out the [code](https://github.com/Sammcb/MountainScape) or play around with the [generator](/MountainScape) and find your favorite mountain scape!

@@ -1,23 +1,18 @@
 nav {
 	display: flex;
 	justify-content: center;
-	background: var(--primary-color);
 
 	ul {
 		display: flex;
 		flex-wrap: wrap;
 		list-style-type: none;
 		padding: 0;
-		margin: 0;
+		border-bottom: var(--border-width) solid var(--primary-color);
 	}
 
 	li {
 		display: flex;
 		justify-content: center;
-	}
-
-	a {
-		color: white;
 		margin: 15px;
 	}
 }
