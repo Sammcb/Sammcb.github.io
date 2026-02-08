@@ -1,5 +1,5 @@
 +++
-title = "Game Day"
+title = "Game day"
 description = "Anniversary part 1."
 date = 2021-03-24
 updated = 2021-03-24

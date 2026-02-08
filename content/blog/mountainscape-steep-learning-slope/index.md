@@ -1,5 +1,5 @@
 +++
-title = "Steep Learning Slope"
+title = "Steep learning slope"
 description = "MountainScape part 0."
 date = 2022-05-01
 updated = 2022-05-01
