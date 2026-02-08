@@ -1,5 +1,5 @@
 +++
-title = "Look at that View!"
+title = "Look at that view!"
 description = "MountainScape part 2."
 date = 2022-05-03
 updated = 2022-05-03

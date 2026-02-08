@@ -11,7 +11,8 @@ author = "Sam McBroom"
 taxonomy_root = "blog"
 taxonomies = [
 	{name = "projects"},
-	{name = "languages"}
+	{name = "languages"},
+	{name = "art"}
 ]
 
 [markdown]

@@ -1,5 +1,5 @@
 +++
-title = "Rough Around the Edges"
+title = "Rough around the edges"
 description = "MountainScape part 1."
 date = 2022-05-02
 updated = 2022-05-02

@@ -1,5 +1,5 @@
 +++
-title = "Happy Anniversary, LÖVE Sam"
+title = "Happy anniversary, LÖVE Sam"
 description = "Anniversary part 2."
 date = 2021-03-25
 updated = 2021-03-25
