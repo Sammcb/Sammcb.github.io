@@ -8,7 +8,7 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 ## Games
 
-### [Gradient Games • 2022-2026](@/gradientgames/_index.md)
+### [Gradient Games • 2022-2026](@/gradientgames/index.md)
 
 [Gradient Games](https://github.com/Sammcb/GradientGames) is a simple board game app built using SwiftUI and SwiftData for iOS, iPadOS, macOS, and tvOS. Includes the ability to play local games on the same device, plus creating and sharing themes.
 
