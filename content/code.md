@@ -24,7 +24,7 @@ This is a collection of some of my favorite coding projects. Check out all of my
 
 [Fally Bally](https://github.com/Sammcb/FallyBally) is a simple, minimalist arcade game written in Swift using SpriteKit for iOS and iPadOS. I originially co-developed it back in 2014. It was written in Objective-C and relied on Apple's iAd system for generating revenue. In 2021, I completely redesigned and rewrote the app from the ground up and released it as a new app under the same name.
 
-## Generative Art
+## Generative art
 
 ### [MountainScape • 2020-2022](https://sammcb.com/MountainScape)
 

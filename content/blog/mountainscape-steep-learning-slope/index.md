@@ -19,7 +19,7 @@ Ever since I wrote my [Double Pendulum](https://github.com/Sammcb/DoublePendulum
 
 This is where I left the project, since I figured I would need to try another approach and didn't want to start from scratch.
 
-## Base Camp
+## Base camp
 
 A year later, and I think I'm ready to tackle the challenge! Earlier this year, I watched some videos by [Sebastian Lague](https://www.youtube.com/channel/UCmtyQOKKmrMVaKuRXz02jbQ) (love his Coding Adventure series btw) and in one of them, he created some realistic planet terrain by simulating rainfall and erosion. I thought it would be really cool to apply these concepts in a 2D context as a basis for my new mountain scape generator.
 
@@ -50,7 +50,7 @@ function randomFloatInRange(min, max) {
 }
 ```
 
-## Beginning the Climb
+## Beginning the climb
 
 To start, I needed to build a decent height map generator upon which my "rain 💧" would fall and shape. I decided to use [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise), which took me down a very mathematical rabbit hole. Perlin noise can be generated in any dimensional space, but I needed a 1D implementation for my height map. Following the algorithm detail, I broke my implementation into 3 steps:
 
@@ -72,7 +72,7 @@ function generateGradients(wavelength) {
 }
 ```
 
-## Onwards and Upwards
+## Onwards and upwards
 
 To find the dot products for a given candidate point (which in my 1D case is just a random `x` coordinate), I first, needed to find the "cell" that contains my candidate point. For my implementation, this meant finding which step contained my candidate point. Finding the cell then allowed me to easily fetch the two generated gradient values on the edges (or "corners" as I called them to stay consistent with the algorithm description) of the cell.
 
@@ -105,7 +105,7 @@ function getDotProducts(x, wavelength, gradients) {
 }
 ```
 
-## Reaching the Summit
+## Reaching the summit
 
 For the third and final step, I just needed to write a function to interpolate between the two dot products I computed above. I followed the algorithm on the Wikipedia page and used the [smoothstep function](https://en.wikipedia.org/wiki/Smoothstep).
 

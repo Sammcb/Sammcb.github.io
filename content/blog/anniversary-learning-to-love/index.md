@@ -19,13 +19,13 @@ LÖVE is a framework for making 2D games in Lua. With only a few days ahead of m
 
 I had to consider the benefits of using a familiar engine that I knew would take a decent amount of work vs. learning a new game engine which might eventually allow for quicker development. I decided to dive into LÖVE, and chose to name my game _Anniversary_. I figured a small project like Anniversary would be a great opportunity to dip my toe into the waters of LÖVE and try out the engine without committing to a larger-scale project.
 
-## 0th Step
+## 0th step
 
 When working on coding projects, I like to create Docker containers to help manage different system install requirements, enhance the portability of my code, and reduce system debugging issues. Unfortunately, I have not yet figured out how to connect a Docker container application to my host computer's graphical display (definitely something I want to explore in the future). For this reason, I decided not to make a container for this project.
 
 Another part of my workflow is to create a `do.sh` script containing a bunch of important commands and build flows so I don't have to remember or look up common actions.
 
-## Hello, World
+## Hello, world
 
 The first step of my journey was to get LÖVE installed and working. I followed the ["Getting Started" guide](https://love2d.org/wiki/Getting_Started) and created a `main.lua` file.
 
@@ -40,13 +40,13 @@ I then ran my game by typing `open -n -a love .` and was excited to see my super
 
 {{ resize_image(file="helloWorld.png", size=700, alt="Hello world text") }}
 
-## Smart Debugging: `print()`
+## Smart debugging: `print()`
 
 Being new to LÖVE, and completely underestimating my familiarity with Lua (I had used it a bit when messing with the [ComputerCraft](http://www.computercraft.info) Minecraft mod many years ago), I decided it would be important to figure out how to print debugging information to the console.
 
 This took a bit of trial and error, but eventually I figured out that I had to launch my game using the direct path to the `love.app` application instead of using the macOS `open` command. During the process, however, I learned more about how to build a `.love` file and package an executable. I updated my `do.sh` script with these build paths, as they might be useful in the future.
 
-## Basic Player
+## Basic player
 
 The next step was to create a player sprite and figure out how to move them around the game window. For pixel art, I recently purchased [Aesprite](https://www.aseprite.org), which is a wonderful drawing application dedicated to pixel art. While $20 seemed like a small price to pay to kickstart _very professional pixel artist career_, they also have a [GitHub page](https://github.com/aseprite/aseprite/) with instructions on how to compile the application yourself for free.
 
@@ -98,7 +98,7 @@ When working with Unity, I primarily relied on classes and inheritance to contru
 
 It took me awhile to figure out a design pattern I was happy with (and I'm still not sure if I'm completely happy with it, but it was fine for this small project). I chose to follow a factory design pattern, and created a `player_factory` module with a single function called `newPlayer()`. This function initialized a `player` table object, and assigned it instance methods. I then followed the same approach for creating a `player_controller` object to connect user inputs to player actions.
 
-## Basic Terrain
+## Basic terrain
 
 I decided to wrap up progress for the day by designing a simple tileset and hopefully getting some tiles drawn to the screen. This is the tileset I whipped up:
 
@@ -123,6 +123,6 @@ end
 
 I was happy to see that the terrain was drawn to the screen, but I ran into an issue where the terrain was drawn over the player. It turns out LÖVE does not support sprite z positions, so I need to make sure I carefully manage the draw order by drawing the player after drawing the world.
 
-## Wrap Up
+## Wrap up
 
 With that, I had some new knowledge of Lua and LÖVE, the ability to control a player and render tiles from a spritesheet, and was excited to continue working on my game another day!

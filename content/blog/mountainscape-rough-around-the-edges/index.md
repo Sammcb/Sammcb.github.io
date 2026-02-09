@@ -11,7 +11,7 @@ languages = ["javascript"]
 [extra]
 stylesheets = ["/readable.css", "/blog.css"]
 +++
-## Fractals All Around
+## Fractals all around
 
 Yes, that's a Frozen reference ❄️. While reading about different kinds of noise, I learned about a couple different options I could implement to achieve landscape-like images. The first was to add multiple [octaves](https://en.wikipedia.org/wiki/Octave_(electronics)) of Perlin noise to achieve rougher textures, creating a form of [fractal noise](https://en.wikipedia.org/wiki/Pink_noise). Other options were to use [value noise](https://en.wikipedia.org/wiki/Value_noise) or [Simplex noise](https://en.wikipedia.org/wiki/Simplex_noise) instead of Perlin noise. I chose to implement the fractal noise first to see what the results would look like.
 
@@ -34,7 +34,7 @@ function fractal(octaves, wavelength, gradients) {
 
 Because each octave results in larger gradient arrays and smaller amplitudes, the more octaves I use the rougher the terrain generated. I found that 8 octaves produced some nice rocky terrain.
 
-## Scaling the Mountain
+## Scaling the mountain
 
 The values this new `fractal()` returns an array of noise with generally very small values, which I think scale later for plotting on my graph.
 
@@ -63,7 +63,7 @@ The result were actual mountain-y looking mountains 🏔️!
 
 {{ resize_image(file="mountain.png", size=700, alt="Layered perlin noise mountain") }}
 
-## Blooper Reel
+## Blooper reel
 
 While working on this new algorithm, I accidentally implemented it improperly (by generating a larger gradients array once and using that for all octaves) and produced some very fractal-y looking mountains.
 

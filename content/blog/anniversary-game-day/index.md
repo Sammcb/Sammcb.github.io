@@ -11,7 +11,7 @@ languages = ["lua"]
 [extra]
 stylesheets = ["/readable.css", "/blog.css"]
 +++
-## A-maze-ing Design
+## A-maze-ing design
 
 Last night, I thought more about the design of the game. I began this project with some vague ideas, but no concrete game mechanics or story. After working on the tileset yesterday, I realized doing the artwork for the game was the most time-consuming task, and with only a couple days left to finish the game I would have to end up with a super simple product. I was inspired to try and make a maze that the player would wander through to find their missing half. I also decided, in the spirit of our anniversary, to change the character design so the player was half a heart and their goal was to search for their other half:
 
@@ -23,7 +23,7 @@ I couldn't help making the game a little cheesey, and decided that the plot and 
 
 {{ resize_image(file="labyrinth.png", size=700, alt="World map") }}
 
-## Level Editor
+## Level editor
 
 Originially, the image of the labyrinth I designed was just meant to help me quickly picture the game world. However, after looking at the scale of the labyrinth (each pixel represented a tile from my spritesheet), I realized it would be nearly impossible to build the level in code with my deadline (not to mention the difficulty of changing the design later). With my knowledge of `Quads`, I decided to design the `world` object to automatically generate the game world given an input image.
 
@@ -41,7 +41,7 @@ I also extended this system so the world automatically chose a random grass or w
 
 While this took a lot of code to get working, it allowed me to effectively use Aesprite as a level editor, which really helped me finalize the design of the labyrinth after playtesting the game.
 
-## Lights, Camera, Action
+## Lights, camera, action
 
 With level generation working, to explore the generated labyrinth in-game, I needed to implement a basic camera. LÖVE doesn't have a built-in camera, so I followed a set of [camera tutorials](https://ebens.me/post/cameras-in-love2d-part-1-the-basics).
 
@@ -54,7 +54,7 @@ After fixing those errors and some trial and error with the camera, I figured ou
 love.graphics.translate(-camera.position.x + love.graphics.getWidth() / 2 * camera.scale.x, -camera.position.y + love.graphics.getHeight() / 2 * camera.scale.y)
 ```
 
-## (Not) Smooth Moves
+## (Not) smooth moves
 
 My next task was to tackle the movement mechanics. I wanted the player to stay on the tile grid rather than having smooth movement. Choosing this approach both helped setup the ending scene and drastically reduced the remaining work on the project. I wouldn't need to learn collision, and could instead limit the player's movements based on what tile they were trying to move to.
 

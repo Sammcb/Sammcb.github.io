@@ -11,7 +11,7 @@ languages = ["javascript"]
 [extra]
 stylesheets = ["/readable.css", "/blog.css"]
 +++
-## Color Me Impressed
+## Color me impressed
 
 After the last devlog, all I needed to do to finish up an initial version of the mountain scape generator was to tweak the generation parameters and add a coloring system. I looked at some vector art and loved the look of a bluish haze over the layers of mountains. I wanted to make a flexible system that would allow me to choose between using solid colors or gradients.
 
