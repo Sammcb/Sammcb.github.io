@@ -16,6 +16,6 @@ After more than six years, Fally Bally is back and looking better than ever!
 
 To file a bug report or feature request, open an [issue](https://github.com/Sammcb/FallyBally/issues).
 
-## [Privacy Policy 🔗](#privacy){#privacy}
+## [Privacy policy 🔗](#privacy){#privacy}
 
 Fally Bally never collects or stores any personal data.

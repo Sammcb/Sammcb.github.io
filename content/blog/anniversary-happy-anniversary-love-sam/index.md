@@ -57,7 +57,7 @@ end
 
 For some reason, the looping appeared to have no effect. I looked around but couldn't find any issues with the `setLoop()` function. I tried exporting the music to other file formates, but nothing seemed to work. Then, when exporting the music, I saw that there was a default option checked in BeepBox called "outro". After unchecking this box, and reloading the music file, the looping finally worked as expected.
 
-## Final Touches
+## Final touches
 
 With the gameplay mechanics, ending cutscene, and music done, I was almost done with the project. I felt the plain green background color needed improving, and I wanted to replace it with randomly generated grass tiles. Luckily, this was pretty easy to accomplish. I just copied the random grass terrain generation logic from my `world` object and set the program to fill an area slightly larger than the player's viewport with the randomly generated grass. I also tweaked the grass generation so plain grass tiles were chosen more frequently than flowering grass tiles.
 
@@ -71,7 +71,7 @@ Finally, I wrapped up the project by designing a few more grass and wall tile va
 
 Apart from thinking she was walking through a small intestine, being confused by the heart-blob character, and generally not being a fan of pixel art graphics, she loved it!
 
-## Closing Thoughts
+## Closing thoughts
 
 Overall, I really liked working with LÖVE. I was impressed with how quickly I was able to create a working (albeit very simple) game. While I really enjoyed using it for this project, Lua's lack of objects makes me unsure if the engine would work well with larger-scale games. Additionally, the lack of sprite z-positioning adds extra complexity to the draw function, and the absence of a built in camera object surprised me.
 

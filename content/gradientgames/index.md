@@ -14,6 +14,6 @@ For information on how to file a bug report or feature request, check out the Gr
 
 {{ download_link(file="starter_themes.json", label="Download themes! 🌊 🌲 🌑 🍁 ❄️ 🌸 ☀️") }}
 
-## [Privacy Policy 🔗](#privacy){#privacy}
+## [Privacy policy 🔗](#privacy){#privacy}
 
 Gradient Games never collects or stores any personal data.
