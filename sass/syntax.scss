@@ -26,6 +26,10 @@ pre {
 	padding: 1px 5px;
 }
 
+a > code {
+	color: unset;
+}
+
 .giallo-l {
 	display: inline-block;
 	min-height: 1lh;
