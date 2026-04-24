@@ -33,5 +33,7 @@ skip_prefixes = [
 	# Returns 403 when link checked, but reachable when clicked.
 	"https://love2d.org",
 	# Returns 403 when link checked, but reachable when clicked.
-	"https://en.wikipedia.org"
+	"https://en.wikipedia.org",
+	# Returns 403 when link checked, but reachable when clicked.
+	"https://kind.sigs.k8s.io"
 ]
