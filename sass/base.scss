@@ -1,5 +1,4 @@
 :root {
-	color-scheme: light dark;
 	--primary-color: royalblue;
 	--neutral-color: gray;
 	--page-padding-horizontal: 5%;
@@ -47,7 +46,7 @@ ul {
 	}
 }
 
-#content {
+main {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;

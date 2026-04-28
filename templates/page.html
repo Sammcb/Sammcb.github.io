@@ -10,9 +10,9 @@
 
 	{%- if page.date -%}
 	<div class="dates">
-		<p>Published: {{ page.date | date(format="%B %-d, %Y") }}</p>
+		<p>Published: <time datetime="{{ page.date }}">{{ page.date | date(format="%B %-d, %Y") }}</time></p>
 		{%- if page.updated -%}
-		<p>Updated: {{ page.updated | date(format="%B %-d, %Y") }}</p>
+		<p>Updated: <time datetime="{{ page.date }}">{{ page.updated | date(format="%B %-d, %Y") }}</time></p>
 		{%- endif -%}
 	</div>
 	{%- endif -%}
