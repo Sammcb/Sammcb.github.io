@@ -7,7 +7,7 @@
 		<li>
 			<a href="{{ page.path }}">{{ page.title }}</a>
 			<br>
-			{{ page.date | date(format="%B %-d, %Y") }} - {{ page.description }}
+			<time datetime="{{ page.date }}">{{ page.date | date(format="%B %-d, %Y") }}</time> - {{ page.description }}
 		</li>
 	{%- endfor -%}
 	</ul>
