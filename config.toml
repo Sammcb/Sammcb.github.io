@@ -37,5 +37,7 @@ skip_prefixes = [
 	# Returns 403 when link checked, but reachable when clicked.
 	"https://kind.sigs.k8s.io",
 	# Returns 403 when link checked, but reachable when clicked.
-	"https://www.talos.dev"
+	"https://www.talos.dev",
+	# Returns 403 when link checked, but reachable when clicked.
+	"https://apps.apple.com"
 ]
