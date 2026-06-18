@@ -27,8 +27,8 @@ talosctl -n $CONTROL_PLANE_IP get securitystate --insecure
 And got the following output:
 
 ```txt
-NODE   NAMESPACE   TYPE            ID              VERSION   SECUREBOOT   UKISIGNINGKEYFINGERPRINT   PCRSIGNINGKEYFINGERPRINT   SELINUXSTATE          MODULESIGNATUREENFORCED
-       runtime     SecurityState   securitystate   1         true                                    <fingerprint>              enabled, permissive   true
+NODE    NAMESPACE    TYPE             ID               VERSION    SECUREBOOT    UKISIGNINGKEYFINGERPRINT    PCRSIGNINGKEYFINGERPRINT    SELINUXSTATE           MODULESIGNATUREENFORCED
+				runtime      SecurityState    securitystate    1          true                                      <fingerprint>               enabled, permissive    true
 ```
 
 Next, I ran a command to view the disks available on the control plane node:
@@ -54,26 +54,26 @@ I was almost ready to generate the machine configuration files, but there were a
 
 # Enable TMP-based disk encryption.
 machine:
-  systemDiskEncryption:
-    ephemeral:
-      provider: luks2
-      keys:
-      - slot: 0
-        tpm:
-          checkSecurebootStatusOnEnroll: true
-    state:
-      provider: luks2
-      keys:
-      - slot: 0
-        tpm:
-          checkSecurebootStatusOnEnroll: true
+	systemDiskEncryption:
+		ephemeral:
+			provider: luks2
+			keys:
+			- slot: 0
+				tpm:
+				checkSecurebootStatusOnEnroll: true
+		state:
+			provider: luks2
+			keys:
+			- slot: 0
+				tpm:
+				checkSecurebootStatusOnEnroll: true
 # Disable default CNI and kube-proxy to prepare for Cilium.
 cluster:
-  network:
-    cni:
-      name: none
-  proxy:
-    disabled: true
+	network:
+		cni:
+			name: none
+	proxy:
+		disabled: true
 ```
 
 Finally, I was ready to generate the machine configuration files. Combining all the prep above, I ran the following command:
