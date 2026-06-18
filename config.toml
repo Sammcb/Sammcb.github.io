@@ -41,5 +41,7 @@ skip_prefixes = [
 	# Returns 403 when link checked, but reachable when clicked.
 	"https://apps.apple.com",
 	# Returns 403 when link checked, but reachable when clicked.
-	"https://gateway-api.sigs.k8s.io"
+	"https://gateway-api.sigs.k8s.io",
+	# Returns 403 when link checked, but reachable when clicked.
+	"https://etcd.io"
 ]
