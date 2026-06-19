@@ -37,7 +37,7 @@ Next, I ran a command to view the disks available on the control plane node:
 talosctl -n $CONTROL_PLANE_IP get disks --insecure
 ```
 
-And noted the ID of the disk I would install Talos on (in my case, `vda`) and stored it in a variable called `DISK_ID`. Now, I faced one of the hardest challenges in all of computer science! ⚠️Warning, programmer humor joke incoming!⚠️
+And noted the ID of the disk I would install Talos on (in my case, `vda`) and stored it in a variable called `DISK_ID`. Now, I faced one of the hardest challenges in all of computer science! ⚠️Warning, programmer humor joke incoming!
 
 > There are only two hard problems in computer science: cache invalidation, naming things, and off-by-one errors.
 
