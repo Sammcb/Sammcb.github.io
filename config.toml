@@ -45,5 +45,9 @@ skip_prefixes = [
 	# Returns 403 when link checked, but reachable when clicked.
 	"https://etcd.io",
 	# Returns 403 when link checked, but reachable when clicked.
-	"https://helm.sh/"
+	"https://helm.sh/",
+	# Returns 403 when link checked, but reachable when clicked.
+	"https://512kb.club",
+	# Returns 403 when link checked, but reachable when clicked.
+	"https://www.cni.dev/"
 ]
