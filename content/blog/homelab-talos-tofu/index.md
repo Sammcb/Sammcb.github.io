@@ -2,7 +2,7 @@
 title = "Talos, Tofu, and TODOs"
 description = "Automating the setup of a Talos cluster."
 date = 2026-06-17
-updated = 2026-06-17
+updated = 2026-09-17
 
 [taxonomies]
 projects = ["homelab"]
@@ -14,7 +14,7 @@ stylesheets = ["/readable.css", "/blog.css"]
 
 Now that I had a VM up and running with a Talos image, it was time to configure the OS and install it persistently. For now, I only plan to have one control plane node and no worker nodes. Multiple control plane node replicas is good is because it enables [high availability](https://en.wikipedia.org/wiki/High_availability). High availability allows for zero-downtime if one of the nodes goes down (for example, during an upgrade). However, this is not something I am very concerned about while getting started. Once I have things fully set up and actually start running some services, maybe I will look at setting up more nodes.
 
-_Quick note: the next sections are mostly just me following the [Talos documentation](https://docs.siderolabs.com/talos). I highly recommend reading through these yourself if you're setting up Talos, as they are more detailed and will remain up-to-date._
+_Quick note: the next sections are mostly just me following the [Talos documentation](https://docs.siderolabs.com/talos). I highly recommend reading through these yourself if you're setting up Talos, as they are more detailed and will remain up-to-date. I'm using Talos v1.13, so some of the steps might look different in new versions._
 
 When initially booting Talos, it only runs in RAM and does not persist any changes to disk. To make changes permanent, a configuration needs to be applied. First things first: the only way to interact with Talos was using the `talosctl` [command line interface (CLI)](https://en.wikipedia.org/wiki/Command-line_interface), which I installed through Nix. Next, I booted up the headless VM I created in the last post and ran `screen` to monitor the output of the [TTY serial device](https://en.wikipedia.org/wiki/Pseudoterminal) assigned by UTM (shown in the VM details when a VM is running). This allowed me to see the output logs from Talos. I noted the IP address in the logs and stored it in a variable called `CONTROL_PLANE_IP`.
 
