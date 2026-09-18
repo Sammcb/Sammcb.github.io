@@ -2,7 +2,7 @@
 title = "Configure it? I barely node it!"
 description = "Configuring a Mac mini for use as a home server."
 date = 2026-04-04
-updated = 2026-04-04
+updated = 2026-09-18
 
 [taxonomies]
 projects = ["homelab"]
@@ -96,7 +96,7 @@ Energy
 ```
 
 ```txt
-General > AirDrop & Handoff
+General > AirDrop & Continuity
 
 - Allow Handoff between this Mac and your iCloud devices: disabled
 - AirDrop: No One
@@ -144,13 +144,9 @@ Appearance
 ```
 
 ```txt
-Apple Intelligence & Siri
+Siri
 
-- Apple Intelligence: disabled
-
-Siri Requests
-
-- Siri: disabled
+- <Disabled>
 ```
 
 ```txt

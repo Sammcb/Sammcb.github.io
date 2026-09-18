@@ -4,7 +4,7 @@ title = "Home"
 [extra]
 stylesheets = ["/readable.css", "/home.css"]
 +++
-{{ svg(file="profile.svg") }}
+{{ <svg file="profile.svg" /> }}
 
 ## About
 

@@ -1,0 +1,40 @@
+{#- Due to this issue: https://github.com/getzola/zola/issues/3224, need to make sure no components return any newlines or that could break when inserted into markdown document. -#}
+
+{%- component svg(@page = null, @section = null, file: string) -%}
+{%- set base_path = page.path | default(value=section.path) -%}
+{%- set file_path = base_path ~ file -%}
+<div class="svg-container">
+	{{- load_data(path=file_path) | replace(from="\n", to="") -}}
+</div>
+{%- endcomponent svg -%}
+
+{%- component image(@page = null, @section = null, file: string, alt: string, op: string = "fit", width: integer = 0, height: integer = 0, size: integer = 0, format: string = "webp", link: bool = true) -%}
+{%- set base_path = page.path | default(value=section.path) -%}
+{%- set path = base_path ~ file -%}
+{%- set width = width | default(value=size, boolean=true) -%}
+{%- set height = height | default(value=size, boolean=true) -%}
+{%- set image = resize_image(path=path, width=width, height=height, op=op, format=format) -%}
+<p>
+	{%- if link -%}
+	<a class="resize-image-source" href="{{ path }}">
+	{%- endif -%}
+	<img alt="{{ alt }}" decoding="async" loading="lazy" src="{{ image.url }}">
+	{%- if link -%}
+	</a>
+	{%- endif -%}
+</p>
+{%- endcomponent image -%}
+
+{%- component lightdarkpicture(light: string, dark: string) -%}
+<picture><source srcset="{{ light }}" media="(prefers-color-scheme: dark)"><img src="{{ dark }}" loading="lazy" decoding="async"></picture>
+{%- endcomponent lightdarkpicture -%}
+
+{%- component downloadlink(file: string, label: string) -%}
+<p><a href="{{ file }}" download>{{ label }}</a></p>
+{%- endcomponent downloadlink -%}
+
+{%- component feedlink(@config) -%}
+{%- set feed_file = config.feed_filenames | first -%}
+{%- set feed_url = get_url(path=feed_file) -%}
+<a href="{{ feed_url }}">RSS</a>
+{%- endcomponent feedlink -%}

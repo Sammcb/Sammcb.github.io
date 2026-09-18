@@ -61,12 +61,12 @@ This system will make it easy for me to adjust the verticality and position of t
 
 The result were actual mountain-y looking mountains 🏔️!
 
-{{ resize_image(file="mountain.png", size=700, alt="Layered perlin noise mountain") }}
+{{ <image file="mountain.png" alt="Layered perlin noise mountain" size={700} /> }}
 
 ## Blooper reel
 
 While working on this new algorithm, I accidentally implemented it improperly (by generating a larger gradients array once and using that for all octaves) and produced some very fractal-y looking mountains.
 
-{{ resize_image(file="fractal.png", size=700, alt="Fractal mountain") }}
+{{ <image file="fractal.png" alt="Fractal mountain" size={700} /> }}
 
 Honestly though, I was really happy with how the fractal noise turned out and wanted to try move forward with making some artworks before adding in the erosion system (who knows, maybe it won't be necessary?).

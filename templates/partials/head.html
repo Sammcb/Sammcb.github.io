@@ -20,28 +20,20 @@
 	{%- set stylesheets = ["/base.css", "/syntax.css"] -%}
 
 	{%- if not page.extra.hide_header -%}
-		{%- set stylesheets = stylesheets | concat(with="/header.css") -%}
+		{%- set stylesheets = [...stylesheets, "/header.css"] -%}
 	{%- endif -%}
 
 	{%- if not page.extra.hide_footer -%}
-		{%- set stylesheets = stylesheets | concat(with="/footer.css") -%}
+		{%- set stylesheets = [...stylesheets, "/footer.css"] -%}
 	{%- endif -%}
 
-	{%- for stylesheet in page.extra.stylesheets | default(value=[]) -%}
-		{%- set_global stylesheets = stylesheets | concat(with=stylesheet) -%}
-	{%- endfor -%}
+	{%- set stylesheets = [...stylesheets, ...(page.extra.stylesheets | default(value=[]))] -%}
 
 	{%- for stylesheet in stylesheets -%}
 		<link rel="stylesheet" type="text/css" href="{{ stylesheet | safe }}">
 	{%- endfor -%}
 
-	{%- set scripts = [] -%}
-
-	{%- for asset in page.assets -%}
-		{%- if asset is ending_with(".js") -%}
-			{%- set_global scripts = scripts | concat(with=asset) -%}
-		{%- endif -%}
-	{%- endfor -%}
+	{%- set scripts = [asset for asset in page.assets if asset is ending_with(pat=".js")] -%}
 
 	{%- for script in scripts -%}
 		<script src="{{ script | safe }}"></script>
