@@ -67,7 +67,7 @@ I also chose an retro, arcade-style font, but chose not to include that in the v
 
 Finally, I wrapped up the project by designing a few more grass and wall tile variations. I was very happy with the final product and was excited to present it to my partner!
 
-{{ resize_image(file="anniversary.png", size=700, alt="Final game cutscene") }}
+{{ <image file="anniversary.png" alt="Final game cutscene" size={700} /> }}
 
 Apart from thinking she was walking through a small intestine, being confused by the heart-blob character, and generally not being a fan of pixel art graphics, she loved it!
 

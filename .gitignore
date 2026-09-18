@@ -1,5 +1,4 @@
 .DS_Store
 .direnv
 public
-static/giallo*.css
 static/processed_images

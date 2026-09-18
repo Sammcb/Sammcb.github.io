@@ -1,8 +1,8 @@
 +++
 title = "Git good"
 description = "Setting up a GitOps controller and secrets management in my homelab."
-date = 2026-09-17
-updated = 2026-09-17
+date = 2026-09-18
+updated = 2026-09-18
 
 [taxonomies]
 projects = ["homelab"]
@@ -32,7 +32,7 @@ With this in mind, I started by evaluating two of the most popular GitOps Kubern
 
 The blog article referenced the [Flux Operator](https://fluxoperator.dev), which is a [Kubernetes Operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) for managing Flux deployments. It also includes a bunch of extra features, but for my setup I didn't want or need those. I mostly just wanted to use it to simplify my initial bootstrap of the Flux controllers. Following the article, I added the module to my Tofu file, created a FluxInstance and set up the operator ResourceSet. Running `tofu apply` again, everything worked! I saw the `flux-operator-bootstrap` Namespace and Job deploy, and then I saw the operator reconcile the FluxInstance and spin up the Flux controllers. Finally, I confirmed that the Flux deployment started reconciling itself so I could make updates to the deployment in the future without needing to apply the Tofu again!
 
-{{ resize_image(file="flux.png", size=700, alt="Flux operator and controllers deployed") }}
+{{ <image file="flux.png" alt="Flux operator and controllers deployed" size={700} /> }}
 
 ## Beginners Flux
 
@@ -53,18 +53,18 @@ I decided to split the tenant definition (OCIRepository/HelmChart and HelmReleas
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:
-  name: cilium
-  namespace: kube-system
+	name: cilium
+	namespace: kube-system
 spec:
-  # ...
-  url: oci://quay.io/cilium/charts/cilium
-  ref:
-    tag: 1.20.0
-  verify:
-    provider: cosign
-    matchOIDCIdentity:
-    - issuer: ^https://token\.actions\.githubusercontent\.com$
-      subject: ^https://github.com/cilium/cilium/.*$
+	# ...
+	url: oci://quay.io/cilium/charts/cilium
+	ref:
+		tag: 1.20.0
+	verify:
+		provider: cosign
+		matchOIDCIdentity:
+		- issuer: ^https://token\.actions\.githubusercontent\.com$
+			subject: ^https://github.com/cilium/cilium/.*$
 ```
 
 And created the HelmRelease:
@@ -73,19 +73,19 @@ And created the HelmRelease:
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: cilium
-  namespace: kube-system
+	name: cilium
+	namespace: kube-system
 spec:
-  # ...
-  releaseName: cilium
-  chartRef:
-    kind: OCIRepository
-    name: cilium
-  values:
-    # The values I had originally been setting in Tofu that Talos provided.
-    ipam:
-      mode: kubernetes
-    # ...
+	# ...
+	releaseName: cilium
+	chartRef:
+		kind: OCIRepository
+		name: cilium
+	values:
+		# The values I had originally been setting in Tofu that Talos provided.
+		ipam:
+			mode: kubernetes
+		# ...
 ```
 
 Then all I had to do was update the Tofu to pull the Chart version and values from these files:
@@ -124,51 +124,51 @@ Next, I created a file in my GitOps cluster directory (`gitops/clusters/virgo/te
 apiVersion: fluxcd.controlplane.io/v1
 kind: ResourceSet
 metadata:
-  name: core
-  namespace: flux-system
+	name: core
+	namespace: flux-system
 spec:
-  wait: true
-  inputs:
-  - tenant: cilium
-  resources:
-  - apiVersion: v1
-    kind: ServiceAccount
-    metadata:
-      name: flux
-      namespace: kube-system
-    automountServiceAccountToken: false
-  - apiVersion: rbac.authorization.k8s.io/v1
-    kind: ClusterRoleBinding
-    metadata:
-      name: flux-kube-system
-    roleRef:
-      apiGroup: rbac.authorization.k8s.io
-      kind: ClusterRole
-      name: cluster-admin
-    subjects:
-    - kind: ServiceAccount
-      name: flux
-      namespace: kube-system
-  - apiVersion: kustomize.toolkit.fluxcd.io/v1
-    kind: Kustomization
-    metadata:
-      name: << inputs.tenant >>
-      namespace: flux-system
-    spec:
-      interval: 1m
-      retryInterval: 5m
-      timeout: 5m
-      serviceAccountName: flux-operator
-      prune: true
-      wait: true
-      sourceRef:
-        kind: GitRepository
-        name: homelab
-      path: gitops/tenants/<< inputs.tenant >>
-      decryption:
-        provider: sops
-        secretRef:
-          name: flux-decryption
+	wait: true
+	inputs:
+	- tenant: cilium
+	resources:
+	- apiVersion: v1
+		kind: ServiceAccount
+		metadata:
+			name: flux
+			namespace: kube-system
+		automountServiceAccountToken: false
+	- apiVersion: rbac.authorization.k8s.io/v1
+		kind: ClusterRoleBinding
+		metadata:
+			name: flux-kube-system
+		roleRef:
+			apiGroup: rbac.authorization.k8s.io
+			kind: ClusterRole
+			name: cluster-admin
+		subjects:
+		- kind: ServiceAccount
+			name: flux
+			namespace: kube-system
+	- apiVersion: kustomize.toolkit.fluxcd.io/v1
+		kind: Kustomization
+		metadata:
+			name: << inputs.tenant >>
+			namespace: flux-system
+		spec:
+			interval: 1m
+			retryInterval: 5m
+			timeout: 5m
+			serviceAccountName: flux-operator
+			prune: true
+			wait: true
+			sourceRef:
+				kind: GitRepository
+				name: homelab
+			path: gitops/tenants/<< inputs.tenant >>
+			decryption:
+				provider: sops
+				secretRef:
+					name: flux-decryption
 ```
 
 Finally, I re-created the cluster and confirmed that Cilium was taken over by Flux after the initial bootstrapping! This ended up being a simple pattern I could apply to any workloads that needed to exist during cluster startup and managed by Flux afterwards. I ended up changing my Flux bootstrap to this approach, as I ran into a number of annoyances later with the provided module. The module is still a good option when creating clusters with Tofu, but it does add an extra Namespace, Job, RBAC, etc. that I could avoid thanks to the config patches Talos supports!
@@ -197,13 +197,13 @@ Finally, I created a `.sops.yaml` configuration file and added the Flux recipien
 
 ```yaml
 stores:
-  yaml:
-    indent: 2
+	yaml:
+		indent: 2
 creation_rules:
 - path_regex: gitops/.*\.yaml
-  encrypted_regex: ^(data|stringData)$
-  age: >-
-    <key-flux-recipient>
+	encrypted_regex: ^(data|stringData)$
+	age: >-
+		<key-flux-recipient>
 ```
 
 To encrypt a Secret, all I need to do now is run:
@@ -237,9 +237,9 @@ Finally, I updated the Flux Kustomizations and configured them to use the new de
 
 ```yaml
 decryption:
-  provider: sops
-  secretRef:
-    name: flux-decryption
+	provider: sops
+	secretRef:
+		name: flux-decryption
 ```
 
 With all this set up, I can now safely encrypt any sensitive value I need to use in the cluster and store them in Git along with the rest of my manifests!

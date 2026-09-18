@@ -2,7 +2,7 @@
 title = "Configure it? I barely node it!"
 description = "Configuring a Mac mini for use as a home server."
 date = 2026-04-04
-updated = 2026-09-17
+updated = 2026-09-18
 
 [taxonomies]
 projects = ["homelab"]

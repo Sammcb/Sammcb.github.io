@@ -10,9 +10,9 @@ Tap left and right to move the ball, collect lives, increase your score multipli
 
 After more than six years, Fally Bally is back and looking better than ever!
 
-{{ resize_image(file="device.png", size=700, alt="Promotional art") }}
+{{ <image file="device.png" alt="Promotional art" size={700} /> }}
 
-[{{ light_dark_picture(light="/app-store-light.svg", dark="/app-store-dark.svg") }}](https://apps.apple.com/us/app/fally-bally/id1549562790)
+[{{ <lightdarkpicture light="/app-store-light.svg" dark="/app-store-dark.svg" /> }}](https://apps.apple.com/us/app/fally-bally/id1549562790)
 
 To file a bug report or feature request, open an [issue](https://github.com/Sammcb/FallyBally/issues).
 

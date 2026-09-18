@@ -29,6 +29,6 @@ if (gradient) {
 
 After adding this, I spent a little time tweaking generation parameters and color values and ended up with some pretty nice views 🏔️!
 
-{{ resize_image(file="mountainscape.png", size=700, alt="Final mountain scape") }}
+{{ <image file="mountainscape.png" alt="Final mountain scape" size={700} /> }}
 
 Feel free to check out the [code](https://github.com/Sammcb/MountainScape) or play around with the [generator](https://sammcb.com/MountainScape) and find your favorite mountain scape!

@@ -2,7 +2,7 @@
 title = "Talos, Tofu, and TODOs"
 description = "Automating the setup of a Talos cluster."
 date = 2026-06-17
-updated = 2026-09-17
+updated = 2026-09-18
 
 [taxonomies]
 projects = ["homelab"]
@@ -149,7 +149,7 @@ talosctl -n $CONTROL_PLANE_IP --talosconfig talosconfig shutdown
 
 Then I deleted the `USB Drive` from the VM settings, set the `USB Support` under the `Input` settings to `Disabled` (as I would no longer need any USB devices), deleted the `Serial` device, and restarted it to confirm all my changes were persisted and the node/cluster reached a healthy state!
 
-{{ resize_image(file="cluster.png", size=700, alt="Healthy cluster") }}
+{{ <image file="cluster.png" alt="Healthy cluster" size={700} /> }}
 
 ## Can we automate it? Yes we (mostly) can!
 

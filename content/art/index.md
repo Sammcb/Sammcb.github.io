@@ -12,7 +12,7 @@ I sometimes like to work on small art projects. I am generally interested in wat
 
 	- [png](solarsystem.png)
 
-	- {{ resize_image(file="solarsystem.png", size=100, alt="Solar system", link=false) }}
+	- {{ <image file="solarsystem.png" alt="Solar system" size={100} link={false} /> }}
 
 - **Crisp October Walk**
 
@@ -20,7 +20,7 @@ I sometimes like to work on small art projects. I am generally interested in wat
 
 	- [png](crispoctoberwalk.png)
 
-	- {{ resize_image(file="crispoctoberwalk.png", size=100, alt="Crisp october walk", link=false) }}
+	- {{ <image file="crispoctoberwalk.png" alt="Crisp october walk" size={100} link={false} /> }}
 
 - **Halloween**
 
@@ -28,7 +28,7 @@ I sometimes like to work on small art projects. I am generally interested in wat
 
 	- [png](halloween.png)
 
-	- {{ resize_image(file="halloween.png", size=100, alt="Halloween", link=false) }}
+	- {{ <image file="halloween.png" alt="Halloween" size={100} link={false} /> }}
 
 - **Mt. Hood**
 
@@ -36,4 +36,4 @@ I sometimes like to work on small art projects. I am generally interested in wat
 
 	- [txt](mthood.txt) [svg](mthood.svg)
 
-	- {{ svg(file="mthood.svg") }}
+	- {{ <svg file="mthood.svg" /> }}

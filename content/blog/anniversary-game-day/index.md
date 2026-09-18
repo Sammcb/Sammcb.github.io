@@ -15,13 +15,13 @@ stylesheets = ["/readable.css", "/blog.css"]
 
 Last night, I thought more about the design of the game. I began this project with some vague ideas, but no concrete game mechanics or story. After working on the tileset yesterday, I realized doing the artwork for the game was the most time-consuming task, and with only a couple days left to finish the game I would have to end up with a super simple product. I was inspired to try and make a maze that the player would wander through to find their missing half. I also decided, in the spirit of our anniversary, to change the character design so the player was half a heart and their goal was to search for their other half:
 
-{{ resize_image(file="player.png", size=700, alt="Player character") }}
+{{ <image file="player.png" alt="Player character" size={700} /> }}
 
 (My partner thought it looked like a blob.)
 
 I couldn't help making the game a little cheesey, and decided that the plot and level design should be used to tie into the ending cutscene. To help speed up gameplay and development (and allow for alliteration in the ending cuscene), I chose to make a labyrinth rather than a maze, so there was only one path the player could follow. This helped me too, since I wouldn't need to design branching paths and dead ends, or balance the complexity of the maze. This was the design I ended up creating:
 
-{{ resize_image(file="labyrinth.png", size=700, alt="World map") }}
+{{ <image file="labyrinth.png" alt="World map" size={700} /> }}
 
 ## Level editor
 
@@ -74,4 +74,4 @@ local cutscene_text = love.graphics.newText(font, "Happy anniversary")
 
 Finally, I ended the day by animating the two heart halves leaving the labyrinth together.
 
-{{ resize_image(file="heart.png", size=700, alt="Full heart character") }}
+{{ <image file="heart.png" alt="Full heart character" size={700} /> }}

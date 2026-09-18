@@ -38,7 +38,7 @@ end
 
 I then ran my game by typing `open -n -a love .` and was excited to see my super-exciting-definitely-original-game up and running in just a few minutes:
 
-{{ resize_image(file="helloWorld.png", size=700, alt="Hello world text") }}
+{{ <image file="helloWorld.png" alt="Hello world text" size={700} /> }}
 
 ## Smart debugging: `print()`
 
@@ -54,7 +54,7 @@ Still being new to pixel art and under a time crunch (who knows what would happe
 
 Thus, I decided to make the player half a circle and have them search for their other half. I blocked out a simple player character:
 
-{{ resize_image(file="player_block.png", size=700, alt="Player character") }}
+{{ <image file="player_block.png" alt="Player character" size={700} /> }}
 
 Using the following code, I was able to get the sprite to draw on screen (though there was no scaling so it was very tiny):
 
@@ -102,7 +102,7 @@ It took me awhile to figure out a design pattern I was happy with (and I'm still
 
 I decided to wrap up progress for the day by designing a simple tileset and hopefully getting some tiles drawn to the screen. This is the tileset I whipped up:
 
-{{ resize_image(file="terrain.png", size=700, alt="Tileset") }}
+{{ <image file="terrain.png" alt="Tileset" size={700} /> }}
 
 I wrote out a `world_factory` module to generate the `world` object and began figuring out how to divide my spritesheet into individual tile images in LÖVE. I figured out the tool I needed was a `Quad`. I was then able to draw the selected portion of the spritesheet to the screen using a `draw()` call.
 

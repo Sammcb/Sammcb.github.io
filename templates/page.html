@@ -19,12 +19,7 @@
 
 	{%- if page.taxonomies -%}
 		<ul class="taxonomies">
-		{%- set_global taxonomy_names = [] -%}
-		{%- for taxonomy_name, terms in page.taxonomies -%}
-			{%- if terms -%}
-				{%- set_global taxonomy_names = taxonomy_names | concat(with=taxonomy_name) -%}
-			{%- endif -%}
-		{%- endfor -%}
+		{%- set taxonomy_names = [taxonomy_name for taxonomy_name, terms in page.taxonomies if terms] -%}
 		{%- for taxonomy_name in taxonomy_names | sort -%}
 			{%- set taxonomy = get_taxonomy(kind=taxonomy_name) -%}
 			<li>
@@ -32,7 +27,7 @@
 				<p>:&nbsp;</p>
 			{%- set term_names = page.taxonomies[taxonomy_name] | sort -%}
 			{%- for term_name in term_names -%}
-				<a href="{{ get_taxonomy_url(kind=taxonomy_name, name=term_name) }}">{{ term_name }}</a>
+				<a href="{{ get_taxonomy_url(kind=taxonomy_name, term=term_name) }}">{{ term_name }}</a>
 				{%- if not loop.last -%}
 				<p>,&nbsp;</p>
 				{%- endif -%}
